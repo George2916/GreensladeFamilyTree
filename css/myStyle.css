@@ -1,0 +1,754 @@
+/*STYLING FOR INDEX.HTML*/
+
+.tree {width: 34500px;}
+
+.George1 {
+	background: #00FFFF;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #666;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	height: 50px;
+	margin-right: -4px;
+	text-decoration: none;
+	vertical-align: bottom;
+	width: 180px;
+}
+
+.George1 p {text-align: center;}
+
+.George2 {
+	background: white;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	height: 50px;
+	margin-right: -4px;
+	text-align: center;
+	vertical-align: bottom;
+	width: 180px;
+}
+
+.George2 svg {overflow: visible;}
+
+.George3::after {
+	content: '';
+    position: relative;
+    top: 50%;
+    border-top: 3px dashed lightblue;
+    display: block;
+}
+
+.George4 {
+	background: white;
+	border: 1px solid white;
+	color: blue;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 13px;
+	height: 50px;
+	margin-right: -4px;
+	padding: 15px;
+	text-align: center;
+	vertical-align: bottom;
+	width: 180px;
+}
+
+.George5 {position: relative;}
+
+.marriageSign {
+	font-size: 225%;
+	letter-spacing: -3px;
+	line-height: 110%;
+}
+
+.marriageSignNoDate {
+	font-size: 225%;
+	letter-spacing: -3px;
+}
+
+/*the next 5 divs create the lines to the left and right of GAG, born 1864 and GG, born about 1833*/
+
+.lineGAG1 {
+  width: 60px;
+  background: #ccc;
+  height: 2px;
+  display: inline-block;
+  margin-bottom: 2.5px;
+}
+
+.pointGAG1 {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #ccc;
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-right: -4px;
+  -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.marriageGAG{
+	display: inline-block;
+	margin-top: 22px;
+}
+
+.lineGAG2 {
+  width: 60px;
+  background: #ccc;
+  height: 2px;
+  display: inline-block;
+  margin-bottom: 2.5px;
+  margin-right: -4px;
+}
+
+.pointGAG2 {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #ccc;
+  display: inline-block;
+  margin-bottom: -1px;
+}
+
+.upperRight a {
+	position: absolute;
+	bottom: 102.5%;
+	color: #666;
+	font-size: 95%;
+	text-decoration: none;
+}
+
+.docLink {
+	color: black;
+	text-decoration: none;
+}
+
+.docLink:hover {
+	color: black;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.progenyLink {
+	color: #666;
+	text-decoration: none;
+}
+
+/*moreInfoZero used for people with neither birth nor death date, moreInfoOne used for people with one or the other, moreInfoTwo used for people with both*/
+
+.moreInfoZero a {
+	position: relative;
+	bottom: -16px;
+	left: 1px;
+	color: #666;
+	font-size: 95%;
+	text-decoration: none;
+	z-index: 2;
+}
+
+.moreInfoOne a {
+	position: relative;
+	bottom: 0;
+	left: 1px;
+	color: #666;
+	font-size: 95%;
+	text-decoration: none;
+	z-index: 2;
+}
+
+.moreInfoTwo a {
+	position: relative;
+	bottom: 16px;
+	left: 1px;
+	color: #666;
+	font-size: 95%;
+	text-decoration: none;
+	z-index: 2;
+}
+
+.moreInfoZero a:hover, .moreInfoOne a:hover, .moreInfoTwo a:hover, .progenyLink:hover, .upperRight a:hover, .upperRightKo a:hover, .upperRightWestacott a:hover {
+	color: black;
+	text-decoration: none;
+} 
+
+/*STYLING FOR KO FAMILY TREE*/
+
+.Ktree {width: 1300px;}
+
+/*.col-2 {width:180px;}*/
+
+.ko2 {width: 180px;}
+
+.ko1 {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px 0px 5px 12px;
+	padding-top: 10px;
+	text-align: center;
+	width: 900px;
+}
+
+.upperRightKo a {
+	position: absolute;
+	bottom: 77.7%;
+	color: #666;
+	font-size: 95%;
+	text-decoration: none;
+}
+
+.indentKo { 
+	padding: 150px;
+}
+
+/*STYLING FOR DUFFY, LEO GARCIA, SCHNEIDER AND SIDOROFF FAMILY TREES*/
+
+.duffyTree {width: 2100px;}
+
+.LGtree {width: 1350px;}
+
+.SchnTree {width: 945px;}
+
+/*.duffy1A - 1C are uses to create the colors of the Irish flag on Duffy family tree*/
+    
+.duffy1A {
+	background: #169B62;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	height: 50px;
+	margin: 5px -3px 5px 543px;
+	width: 300px;
+	vertical-align: bottom;
+}
+
+.duffy1B {
+	background: #f0ead6;
+	display: inline-block;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px -2px 5px -2px;
+	padding-top: 10px;
+	text-align: center;
+	width: 300px;
+	vertical-align: bottom;
+}
+
+.duffy1C {
+	background: #FF883E;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	height: 50px;
+	margin: 5px 0px 5px -3px;
+	width: 300px;
+	vertical-align: bottom;
+}
+
+.leoGarcia1 {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px 0px;
+	padding-top: 10px;
+	text-align: center;
+	width: 1260px;
+}
+
+.sidoroff1 {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px 0px 5px 0;
+	padding-top: 10px;
+	text-align: center;
+	width: 900px;
+}
+
+/* STYLING FOR MORRISON FAMILY TREE*/
+
+.Mtree {width: 7500px;}
+
+.morrison1 {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px 0px 5px 2914px;
+	padding-top: 15px;
+	text-align: center;
+	width: 1640px;
+}
+
+/*STYLING FOR WESTACOTT FAMILY TREE*/
+
+.westacott1 {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px 0px 5px 192px;
+	padding-top: 10px;
+	text-align: center;
+	width: 540px;
+}
+
+.upperRightWestacott a {
+	position: absolute;
+	bottom: 61.5%;
+	color: #666;
+	font-size: 95%;
+	text-decoration: none;
+}
+
+/*STYLING FOR MODALS*/
+
+.modal-Info > div 	{
+  	padding: 0px 20px 0px 20px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: #00FFFF;
+	background: -moz-linear-gradient(#00FFFF, #00ffbf);
+	background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+	background: -o-linear-gradient(#00FFFF, #00BFFF);
+ }
+ 
+@media only screen and (max-width: 575px) {
+   .modal-body > p, .modal-body > div, .modal-body > button {
+    font-size: 85%;
+  }
+}
+
+.modal-Photo > div {margin: 10% auto;
+ 	padding: 5px 20px 13px 20px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: #00FFFF;
+}
+
+.borderBottomModalPhoto {
+	border-bottom: 2px solid #0080ff;
+}
+ 
+.modal-header {border-bottom: 2px solid #0080ff;}
+
+.close {
+	color: #000;
+	font-family: arial, verdana, tahoma;
+	font-size: 140%;
+	opacity: 0.5;
+	position: absolute;
+	right: 12px;
+	top: 25px;
+	text-decoration: none;
+	width: 36px;
+}
+
+/*modals with tabs*/
+
+.btn-close:focus {
+	box-shadow: none;
+}
+
+.tabHeading {
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	outline: none !important;
+    border: none !important;
+	background: #0080ff;
+	height: 40px;
+	margin: 4px 0px;
+	width: 100px;
+}
+	
+.tabHeading:hover {
+	cursor: grab;
+	font-weight: 900;
+}
+
+.highlightedTab {background: #0000ff;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	font-weight: 700;
+}
+
+.highlightedTab:focus {
+	outline: none !important;
+    border: none !important;
+}
+
+/*STYLING FOR PHOTO[NAME].HTML AND PHOTODOCS[NAME].HTML */
+
+@media only screen and (max-width: 576px) {
+  .col-12 > p, .col-12 > div > p, .carousel-item > p  {font-size: 85%}
+}
+
+.img-responsive {
+	max-width: 100%; 
+	height: auto; 
+	display: block;
+}
+
+.borderBottom {border-bottom: 8px solid #ccc;}
+
+.pic-back {display: none;}
+
+.background {background: #00FFFF;
+	border: 5px solid #ccc;
+	padding: 30px;
+}
+
+.center {text-align: center;}
+
+.hover:hover {
+	cursor: grab;
+}
+
+.heading {
+	font-family: arial, verdana, tahoma;
+	text-align: center;
+}
+
+/*the next 4 items create the styling for the button at the top of photo[name].html and photoDocs[name}.html*/
+
+#headingZZZ {
+	font-family: arial, verdana, tahoma;
+	padding-top: 5px;
+ 	text-align: center;
+}
+
+#btn-ZZZ {
+ 	background: #00FFFF;
+	border-style: hidden;
+	color: #000;
+	font-family: arial, verdana, tahoma;
+	font-size: 140%;
+	opacity: 0.5;
+}
+
+#btn-ZZZ:hover {
+	cursor: grab;
+	opacity: 1.0;
+}
+
+@media only screen and (max-width: 575px) {
+   #headingZZZ {
+    font-size: 85%;
+  }
+  
+  #btn-ZZZ {
+  	font-size: 100%;}
+}
+
+/* STYLING FOR photoRichardGreenslade.html */
+
+.noDisplay {
+	visibility: hidden;
+}
+
+/*STYLING FOR photoWayneKnight.html*/
+
+@media only screen and (max-width: 400px) {
+  .wayneKnightPhoto {
+    height: 190px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .wayneKnightPhoto {
+    height: 230px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .wayneKnightPhoto {
+    height: 260px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .wayneKnightPhoto {
+    height: 290px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .wayneKnightPhoto {
+    height: 320px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wayneKnightPhoto {
+    height: 190px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wayneKnightPhoto {
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wayneKnightPhoto {
+    height: 320px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .wayneKnightPhoto {
+    height: 350px;
+    width: auto;
+  }
+}
+
+/*STYLING FOR carouselGeorgeGreensladeII.html and photoDocs[name].html for BelleHinks, CarolinaVirginiaGreenslade and GeorgeGreensladeBorn1864*/
+
+@media only screen and (min-width: 992px) {	
+	.BHcarousel-indicators {
+		padding-bottom: 40px;
+}
+}
+
+@media only screen and (min-width: 350px) {	
+	.GAGIcarousel-indicators {
+		padding-bottom: 90px;
+}
+}
+
+@media only screen and (min-width: 400px) {	
+	.GAGIcarousel-indicators {
+		padding-bottom: 70px;
+}
+}
+
+@media only screen and (min-width: 450px) {	
+	.GAGIcarousel-indicators {
+		padding-bottom: 50px;
+}
+}
+
+@media only screen and (min-width: 500px) {	
+	.GAGIcarousel-indicators {
+		padding-bottom: 40px;
+}
+}
+
+.carouselContainerGG {
+	background: #9B533B;
+	border: 4px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {	
+	.carouselGG {
+		height: 400px;
+		width: 100%;
+		object-fit: contain;
+}
+}
+
+@media only screen and (min-width: 768px) {	
+	.carouselGG {
+		height: 500px;
+		width: 100%;
+		object-fit: contain;
+}
+}
+
+@media only screen and (min-width: 992px) {	
+	.carouselGG {
+		height: 700px;
+		width: 100%;
+		object-fit: contain;
+}
+}
+
+.d-none {color: #FF7034;}
+
+.carousel-indicators {filter: invert(100%);}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {filter: invert(100%);}
+
+.carousel .carousel-indicators button {
+   	width: 10px;
+  	height: 10px;
+  	border-radius: 100%;
+  	color: red;
+}
+
+/*STYLING FOR NAVBAR*/
+
+.navbar {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	margin: 5px 0px 5px 180px;
+	width: 1629px;
+}
+
+.navbar-brand {
+	font-family: 'Itim', arial, verdana;
+}
+
+.nav-item:hover {
+	background: #FFB697;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.dropdown-menu {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: #00FFFF;
+	background: -moz-linear-gradient(#00FFFF, #00ffbf);
+	background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+	background: -o-linear-gradient(#00FFFF, #00BFFF);
+}
+
+.dropdown-item:hover {background: #00FFFF;
+	border-radius: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.georgeNB1 {
+	background: white;
+	display: inline-block;
+	height: 50px;
+	vertical-align: bottom;
+	width: 5160px;
+}
+
+/*STYLING IN SVG IN GREENSLADE FAMILY TREE*/
+
+#thomasAndElizabethGreenslade::after, #georgeAndMatildaGreenslade::after, #georgeAndFirstWifeGreenslade::after {
+	content: 'three\00a0\00a0\00a0\00a0 children';
+    position: relative;
+   	left: 8px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#johnAndJaneGreenslade::after {
+	content: 'nine\00a0\00a0\00a0\00a0 children';
+    position: relative;
+   	left: 10px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#georgeAndAliceGreenslade::after {
+	content: 'eight\00a0\00a0\00a0\00a0 children';
+    position: relative;
+   	left: 8px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#georgeAndJaneGreenslade::after {
+	content: 'five\00a0\00a0\00a0\00a0 children';
+    position: relative;
+   	left: 12px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#georgeAndEvaGreenslade::after {
+	content: 'six\00a0\00a0\00a0\00a0 children';
+    position: relative;
+   	left: 14px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+/*STYLING FOR realtionFinderModal AND poesyModal*/
+
+.relationFinderButton {
+	display: inline-block;
+	vertical-align: bottom;
+	line-height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 2px solid #ccc;
+}
+
+td {
+	border: 2px solid #ccc;
+	font-size: 90%;}
+
+.tableHeading3 {font-size: 90%;
+	font-weight: normal;
+}
+.firstColumn, .secondColumn {vertical-align: top;}
+
+.thirdColumn {text-align: center;}

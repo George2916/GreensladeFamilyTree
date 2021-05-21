@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head> 
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+    
+<title>George Alfred Greenslade and Eva Josephine Green Photos</title>
+ 
+</head>
+<body>
+  
+<div class="container background">
+    
+    <div class="row">
+        
+        <div class="col-1" >
+        </div>
+        
+        <div class="col-12">
+            <h6 id="headingZZZ">George Alfred Greenslade and Eva Josephine Green</h6>
+        </div>
+  		
+  		<div class="col-1">
+  		    <button onclick="goingBack()" id="btn-ZZZ"><!--&times; &#10006;-->&#x2715;</button>
+        </div>
+        
+    </div>
+    
+    <div class="row"><!--first row-->
+        
+        <div class="col-12">
+            <img class="img-fluid" src="images/georgeGreensladeBorn1864(1).jpg">
+            <p>George Alfred Greenslade, on right<br>Brazil, around 1911</p>
+        </div>
+        
+    </div><!--closes first row-->
+    
+    <div class="row"><!--second row-->
+    
+        <div class="col-12 col-md-6">
+            <img class="img-fluid" src="images/georgeGreensladeBorn1864(2).jpg">
+            <p>George Alfred Greenslade and Eva Josephine Green</p>
+        </div>
+        
+        <div class="col-12 col-md-6">
+            <img class="img-fluid" src="images/georgeGreensladeBorn1864(3).jpg">
+            <p>George Alfred Greenslade with sons James&nbsp;<i>(left)</i>&nbsp;and Richard&nbsp;<i>(right)</i><br>Around 1928</p>
+        </div>
+        
+    </div><!--closes second row-->
+    
+    <div class="row"><!--third row-->
+        
+        <div class="col-12">
+            <div id="p1of2" onclick="twoPageFirstFlip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(4A).jpg">
+                <p><i>front</i><br>George Alfred Greenslade<br>August 1941, Salisbury, Maryland</p>
+            </div>
+        
+            <div class="pic-back" id="p2of2" onclick="twoPageUnflip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(4B).jpg">
+                <p><i>back</i></p>
+            </div>
+            
+        </div>
+
+    </div><!--closes third row-->
+    
+    <div class="row"><!--fourth row-->
+        
+        <div class="col-12 borderBottom">
+            <div id="p1of5" onclick="fivePageFirstFlip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(5A1).jpg">
+                <p>Headstone and footstones for George Alfred Greenslade and Eva Josephine Green<br>Wicomico Memorial Park, Salisbury, Maryland<br><i>Click on photo to see footstones and other side of headstone.</i></p>
+            </div>
+            
+            <div class="pic-back" id="p2of5" onclick="fivePageSecondFlip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(5A2).jpg">
+                <p>George's and Eva's footstones</p>
+            </div>
+        
+            <div class="pic-back" id="p3of5" onclick="fivePageThirdFlip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(5B).jpg">
+                <p>Closeup of George's footstone</p>
+            </div>
+            
+            <div class="pic-back" id="p4of5" onclick="fivePageFourthFlip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(5C).jpg">
+                <p>Closeup of Eva's footstone</p>
+            </div>
+            
+            <div class="pic-back" id="p5of5" onclick="fivePageUnflip()">
+                <img class="img-fluid hover" src="images/georgeGreensladeBorn1864(5D).jpg">
+                <p>Other side of George and Eva's headstone</p>
+            </div>
+            
+        </div>
+
+    </div><!--closes fourth row-->
+       
+</div> <!--closes container-->
+
+<script src="js/bootstrap.js"></script>
+<script src="js/myJavascript.js"></script>
+
+</body>
+</html>
