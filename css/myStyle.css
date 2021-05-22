@@ -60,15 +60,16 @@
 
 .George5 {position: relative;}
 
-.marriageSign {
+.divorceSign {
 	font-size: 225%;
-	letter-spacing: -3px;
+	letter-spacing: -4px;
 	line-height: 110%;
 }
 
-.marriageSignNoDate {
+.marriageSign {
 	font-size: 225%;
-	letter-spacing: -3px;
+	letter-spacing: -6px;
+	line-height: 110%;
 }
 
 /*the next 5 divs create the lines to the left and right of GAG, born 1864 and GG, born about 1833*/
@@ -291,7 +292,7 @@
 	margin: 5px 0px 5px 0;
 	padding-top: 10px;
 	text-align: center;
-	width: 900px;
+	width: 904px;
 }
 
 /* STYLING FOR MORRISON FAMILY TREE*/
