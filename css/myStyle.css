@@ -62,7 +62,7 @@
 
 .divorceSign {
 	font-size: 225%;
-	letter-spacing: -4px;
+	letter-spacing: -5.5px;
 	line-height: 110%;
 }
 
@@ -267,18 +267,47 @@
 	vertical-align: bottom;
 }
 
-.leoGarcia1 {
-	background: #FF7034;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+/*.leoGarcia1A - 1C are uses to create the colors of the Peruvian flag on the Leo Garcia family tree*/
+    
+.leoGarcia1A {
+	background: #D91023;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	height: 50px;
+	margin: 5px -3px 5px 0px;
+	width: 420px;
+	vertical-align: bottom;
+}
+
+.leoGarcia1B {
+	background: #f0ead6;
+	display: inline-block;
 	font-family: 'Itim', arial, verdana;
 	font-size: 18px;
 	height: 50px;
-	margin: 5px 0px;
+	margin: 5px -1px 5px -1px;
 	padding-top: 10px;
 	text-align: center;
-	width: 1260px;
+	width: 420px;
+	vertical-align: bottom;
+}
+
+.leoGarcia1C {
+	background: #D91023;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	height: 50px;
+	margin: 5px 3px 5px -3px;
+	width: 420px;
+	vertical-align: bottom;
 }
 
 .sidoroff1 {
