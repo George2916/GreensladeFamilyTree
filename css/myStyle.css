@@ -701,12 +701,22 @@
 }
 
 .georgeNB1 {
-	background: white;
 	display: inline-block;
 	height: 50px;
 	vertical-align: bottom;
 	width: 5160px;
 }
+
+.indentShakespeare1 {padding-left: 20px;}
+
+.indentShakespeare2 {padding-left: 25px;}
+
+@media only screen and (max-width: 575px) {
+   .indentShakespeare1, .indentShakespeare2 {
+    padding-left: 0;
+  }
+}
+
 
 /*STYLING IN SVG IN GREENSLADE FAMILY TREE*/
 
