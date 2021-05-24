@@ -232,8 +232,6 @@
 	-webkit-border-radius: 5px 0px 0px 5px;
 	-moz-border-radius: 5px 0px 0px 5px;
 	display: inline-block;
-	font-family: arial, verdana, tahoma;
-	font-size: 11px;
 	height: 50px;
 	margin: 5px -3px 5px 543px;
 	width: 300px;
@@ -259,8 +257,6 @@
 	-webkit-border-radius: 0px 5px 5px 0px;
 	-moz-border-radius: 0px 5px 5px 0px;
 	display: inline-block;
-	font-family: arial, verdana, tahoma;
-	font-size: 11px;
 	height: 50px;
 	margin: 5px 0px 5px -3px;
 	width: 300px;
@@ -275,8 +271,6 @@
 	-webkit-border-radius: 5px 0px 0px 5px;
 	-moz-border-radius: 5px 0px 0px 5px;
 	display: inline-block;
-	font-family: arial, verdana, tahoma;
-	font-size: 11px;
 	height: 50px;
 	margin: 5px -3px 5px 0px;
 	width: 420px;
@@ -302,8 +296,6 @@
 	-webkit-border-radius: 0px 5px 5px 0px;
 	-moz-border-radius: 0px 5px 5px 0px;
 	display: inline-block;
-	font-family: arial, verdana, tahoma;
-	font-size: 11px;
 	height: 50px;
 	margin: 5px 3px 5px -3px;
 	width: 420px;
@@ -380,11 +372,11 @@
 	background: -o-linear-gradient(#00FFFF, #00BFFF);
  }
  
-@media only screen and (max-width: 575px) {
+/*@media only screen and (max-width: 575px) {
    .modal-body > p, .modal-body > div, .modal-body > button {
     font-size: 85%;
   }
-}
+}*/
 
 .modal-Photo > div {margin: 10% auto;
  	padding: 5px 20px 13px 20px;
@@ -721,16 +713,34 @@
 /*STYLING IN SVG IN GREENSLADE FAMILY TREE*/
 
 #thomasAndElizabethGreenslade::after, #georgeAndMatildaGreenslade::after, #georgeAndFirstWifeGreenslade::after {
-	content: 'three\00a0\00a0\00a0\00a0 children';
+	content: 'three \00a0\00a0\00a0 children';
     position: relative;
-   	left: 8px;
+   	left: 6px;
    	top: -41px;
     color: #666;
     display: block;
 }
 
 #johnAndJaneGreenslade::after {
-	content: 'nine\00a0\00a0\00a0\00a0 children';
+	content: 'nine \00a0\00a0\00a0 children';
+    position: relative;
+   	left: 9px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#georgeAndAliceGreenslade::after {
+	content: 'eight \00a0\00a0\00a0 children';
+    position: relative;
+   	left: 7px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#georgeAndJaneGreenslade::after {
+	content: 'five \00a0\00a0\00a0 children';
     position: relative;
    	left: 10px;
    	top: -41px;
@@ -738,28 +748,10 @@
     display: block;
 }
 
-#georgeAndAliceGreenslade::after {
-	content: 'eight\00a0\00a0\00a0\00a0 children';
-    position: relative;
-   	left: 8px;
-   	top: -41px;
-    color: #666;
-    display: block;
-}
-
-#georgeAndJaneGreenslade::after {
-	content: 'five\00a0\00a0\00a0\00a0 children';
+#georgeAndEvaGreenslade::after {
+	content: 'six \00a0\00a0\00a0 children';
     position: relative;
    	left: 12px;
-   	top: -41px;
-    color: #666;
-    display: block;
-}
-
-#georgeAndEvaGreenslade::after {
-	content: 'six\00a0\00a0\00a0\00a0 children';
-    position: relative;
-   	left: 14px;
    	top: -41px;
     color: #666;
     display: block;
