@@ -6,7 +6,7 @@
 	background: #00FFFF;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	-webkit-border-radius: 5px;
+	/*-webkit-border-radius: 5px;*/
 	-moz-border-radius: 5px;
 	color: #666;
 	display: inline-block;
@@ -93,7 +93,7 @@
   margin-right: -4px;
   -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
+    /*-webkit-transform: rotate(180deg);*/
   transform: rotate(180deg);
 }
 
