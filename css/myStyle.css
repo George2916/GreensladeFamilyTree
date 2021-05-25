@@ -218,7 +218,7 @@
 
 /*STYLING FOR DUFFY, LEO GARCIA, SCHNEIDER AND SIDOROFF FAMILY TREES*/
 
-.duffyTree {width: 2100px;}
+.duffyTree {width: 2400px;}
 
 .LGtree {width: 1350px;}
 
@@ -233,7 +233,7 @@
 	-moz-border-radius: 5px 0px 0px 5px;
 	display: inline-block;
 	height: 50px;
-	margin: 5px -3px 5px 543px;
+	margin: 5px -3px 5px 724px;
 	width: 300px;
 	vertical-align: bottom;
 }
