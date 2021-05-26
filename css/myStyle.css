@@ -184,9 +184,11 @@
 } 
 
 .moreInfoArrow {
-	font-size: 135%;
+	font-size: 125%;
 	vertical-align: top;
 }
+
+.moreInfoArrow:hover {cursor: pointer;}
 
 /*STYLING FOR KO FAMILY TREE*/
 
