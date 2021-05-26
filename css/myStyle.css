@@ -183,6 +183,11 @@
 	text-decoration: none;
 } 
 
+.moreInfoArrow {
+	font-size: 135%;
+	vertical-align: top;
+}
+
 /*STYLING FOR KO FAMILY TREE*/
 
 .Ktree {width: 1300px;}
@@ -387,7 +392,8 @@
 
 @media only screen and (max-width: 575px) {
    #shakespeareQuotes, #poem1, #poem2  {
-    font-size: 85%;
+    font-size: 80%;
+    color: red;
   }
 }
 
