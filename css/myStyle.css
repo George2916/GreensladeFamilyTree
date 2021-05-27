@@ -395,7 +395,7 @@
 
 @media only screen and (max-width: 575px) {
    #shakespeareQuotes, #poem1, #poem2  {
-    font-size: 80%;
+    font-size: 75%;
     color: red;
   }
 }
