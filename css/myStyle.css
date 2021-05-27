@@ -163,7 +163,7 @@
 	bottom: 0;
 	left: 1px;
 	color: #666;
-	font-size: 95%;
+	/*font-size: 95%;*/
 	text-decoration: none;
 	z-index: 2;
 }
@@ -388,7 +388,8 @@
 
 @media only screen and (max-width: 500px) {
    #shakespeareQuotes, #poem1, #poem2  {
-    font-size: 80%;
+    font-size: 75%;
+    color: yellow;
   }
 }
 
