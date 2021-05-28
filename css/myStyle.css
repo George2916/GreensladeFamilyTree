@@ -15,7 +15,7 @@
 	height: 50px;
 	margin-right: -4px;
 	text-decoration: none;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	width: 180px;
 }
 
@@ -29,7 +29,7 @@
 	height: 50px;
 	margin-right: -4px;
 	text-align: center;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	width: 180px;
 }
 
@@ -54,7 +54,7 @@
 	margin-right: -4px;
 	padding: 15px;
 	text-align: center;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	width: 180px;
 }
 
@@ -187,7 +187,7 @@
 
 .moreInfoArrow {
 	font-size: 125%;
-	vertical-align: top;
+	
 }
 
 .moreInfoArrow:hover {cursor: pointer;}
@@ -284,7 +284,7 @@
 	height: 50px;
 	margin: 5px -3px 5px 0px;
 	width: 420px;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 }
 
 .leoGarcia1B {
@@ -297,7 +297,7 @@
 	padding-top: 10px;
 	text-align: center;
 	width: 420px;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 }
 
 .leoGarcia1C {
@@ -309,7 +309,7 @@
 	height: 50px;
 	margin: 5px 3px 5px -3px;
 	width: 420px;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 }
 
 .sidoroff1 {
@@ -717,7 +717,7 @@
 .georgeNB1 {
 	display: inline-block;
 	height: 50px;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	width: 5160px;
 }
 
@@ -783,7 +783,7 @@
 
 .relationFinderButton {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	line-height: 100%;
 }
 
@@ -803,6 +803,6 @@ td {
 .tableHeading3 {font-size: 90%;
 	font-weight: normal;
 }
-.firstColumn, .secondColumn {vertical-align: top;}
+.firstColumn, .secondColumn {vertical-align: text-top;}
 
 .thirdColumn {text-align: center;}
