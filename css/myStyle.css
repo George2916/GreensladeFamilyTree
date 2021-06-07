@@ -528,11 +528,16 @@
 
 /*STYLING FOR photoWayneKnight.html*/
 
-
-
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 300px) {
   .wayneKnightPhoto {
-    height: 230px;
+    height: 170px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .wayneKnightPhoto {
+    height: 200px;
     width: auto;
   }
 }
