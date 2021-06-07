@@ -528,63 +528,63 @@
 
 /*STYLING FOR photoWayneKnight.html*/
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-device-width: 300px) {
   .wayneKnightPhoto {
     height: 170px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (min-device-width: 350px) {
   .wayneKnightPhoto {
     height: 200px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 440px) {
+@media only screen and (min-device-width: 440px) {
   .wayneKnightPhoto {
     height: 260px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-device-width: 500px) {
   .wayneKnightPhoto {
     height: 290px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-device-width: 576px) {
   .wayneKnightPhoto {
     height: 320px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
   .wayneKnightPhoto {
     height: 190px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-device-width: 992px) {
   .wayneKnightPhoto {
     height: 250px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-device-width: 1200px) {
   .wayneKnightPhoto {
     height: 320px;
     width: auto;
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-device-width: 1400px) {
   .wayneKnightPhoto {
     height: 350px;
     width: auto;
