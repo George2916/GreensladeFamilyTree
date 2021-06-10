@@ -1,0 +1,55 @@
+/*CSS FOR PROGENY OF EDWARD DUFFY AND MAE TORPEY*/
+
+.duffyDiv {
+    display: inline-block;
+    height: 50px;
+    width: 8300px;
+}
+
+.duffy2A {
+	background: #b22234;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 3350px;
+	width: 800px;
+	vertical-align: text-bottom;
+}
+
+.duffy2B {
+	background: #f0ead6;
+	display: inline-block;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	margin: 5px -2px 5px -2px;
+	text-align: center;
+	width: 800px;
+	vertical-align: text-bottom;
+}
+
+.duffy2C {
+	background: #0A3161;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px 0px 5px -3px;
+	width: 800px;
+	vertical-align: text-bottom;
+}
+
+circle {fill: #0A3161;}
+
+path {fill: none;
+      stroke: #b22234;
+}
+
+body {font-size: 83%;}
+
