@@ -98,51 +98,93 @@ function fivePageUnflip() {
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2Flip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2A)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2B)");
+function sixPageFirstFlip() {
+  var x = document.getElementById("page1of6");
+  var y = document.getElementById("page2of6");
   x.style.display = "none";
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2SecondFlip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2B)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2C)");
+function sixPageSecondFlip() {
+  var x = document.getElementById("page2of6");
+  var y = document.getElementById("page3of6");
   x.style.display = "none";
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2ThirdFlip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2C)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2D)");
+function sixPageThirdFlip() {
+  var x = document.getElementById("page3of6");
+  var y = document.getElementById("page4of6");
   x.style.display = "none";
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2FourthFlip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2D)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2E)");
+function sixPageFourthFlip() {
+  var x = document.getElementById("page4of6");
+  var y = document.getElementById("page5of6");
   x.style.display = "none";
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2FifthFlip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2E)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2F)");
+function sixPageFifthFlip() {
+  var x = document.getElementById("page5of6");
+  var y = document.getElementById("page6of6");
   x.style.display = "none";
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2SixthFlip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2F)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2G)");
+function sixPageUnflip() {
+  var x = document.getElementById("page6of6");
+  var y = document.getElementById("page1of6");
   x.style.display = "none";
   y.style.display = "block";
 }
 
-function georgeGreensladeBorn1864Passport2Unflip() {
-  var x = document.getElementById("georgeGreensladeBorn1864Passport(2G)");
-  var y = document.getElementById("georgeGreensladeBorn1864Passport(2A)");
+function sevenPageFirstFlip() {
+  var x = document.getElementById("page1of7");
+  var y = document.getElementById("page2of7");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sevenPageSecondFlip() {
+  var x = document.getElementById("page2of7");
+  var y = document.getElementById("page3of7");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sevenPageThirdFlip() {
+  var x = document.getElementById("page3of7");
+  var y = document.getElementById("page4of7");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sevenPageFourthFlip() {
+  var x = document.getElementById("page4of7");
+  var y = document.getElementById("page5of7");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sevenPageFifthFlip() {
+  var x = document.getElementById("page5of7");
+  var y = document.getElementById("page6of7");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sevenPageSixthFlip() {
+  var x = document.getElementById("page6of7");
+  var y = document.getElementById("page7of7");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sevenPageUnflip() {
+  var x = document.getElementById("page7of7");
+  var y = document.getElementById("page1of7");
   x.style.display = "none";
   y.style.display = "block";
 }
