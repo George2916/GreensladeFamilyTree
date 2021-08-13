@@ -36,19 +36,44 @@
     </div>
     
            
-    <div class="row borderBottom"><!--row-->
+    <div class="row borderBottom"><!--first row-->
     
         <div class="col-12 col-md-6">
-            <img class="img-fluid" src="images/albertMorrisonBorn1871(1).jpg">
-            <p></p>
-        </div>
+            <div id="p1of2" onclick="twoPageFirstFlip()">
+                <img class="img-fluid hover" src="images/albertMorrisonBorn1871(1A).jpg">
+                <p><i>Front</i></p>
+            </div>
+        
+            <div class="pic-back" id="p2of2" onclick="twoPageUnflip()">
+                <img class="img-fluid hover" src="images/albertMorrisonBorn1871(1B).jpg">
+                <p><i>Back</i></p>
+            </div>
+           
+        </div> <!--closes ".col-12 col-md-6"-->
         
         <div class="col-12 col-md-6">
             <img class="img-fluid" src="images/albertMorrisonBorn1871(2).jpg">
-            <p>With son Albert and daughter Eleanor<br>Chicago, Illinois, June 1914</p>
         </div>
         
-    </div><!--closes row-->
+    </div><!--closes first row-->
+    
+    
+    <div class="row borderBottom"><!--second row-->
+    
+        <div class="col-12 col-md-2">
+        </div>
+            
+        <div class="col-12 col-md-8">
+            <div>
+                <img class="img-fluid" src="images/albertMorrisonBorn1871(3).jpg">
+            <p>With son Albert and daughter Eleanor<br>Chicago, Illinois, June 1914</p>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-2">
+        </div>
+    
+    </div><!--closes second row-->
        
 </div><!--closes container-->
 
