@@ -1,6 +1,6 @@
 /*STYLING FOR INDEX.HTML*/
 
-.tree {width: 34500px;}
+.tree {width: 39000px;}
 
 .George1 {
 	background: #00FFFF;
@@ -198,10 +198,10 @@
 	font-family: 'Itim', arial, verdana;
 	font-size: 18px;
 	height: 50px;
-	margin: 5px 0px 5px 12px;
+	margin: 5px 0px 5px 6px;
 	padding-top: 10px;
 	text-align: center;
-	width: 900px;
+	width: 906px;
 }
 
 .ko2 {width: 180px;}
@@ -324,7 +324,7 @@
 
 /* STYLING FOR MORRISON FAMILY TREE*/
 
-.Mtree {width: 7500px;}
+.Mtree {width: 8500px;}
 
 .morrison1 {
 	background: #FF7034;
@@ -335,10 +335,10 @@
 	font-family: 'Itim', arial, verdana;
 	font-size: 18px;
 	height: 50px;
-	margin: 5px 0px 5px 2914px;
+	margin: 5px 0px 5px 2345px;
 	padding-top: 15px;
 	text-align: center;
-	width: 1640px;
+	width: 1442px;
 }
 
 /*STYLING FOR WESTACOTT FAMILY TREE*/
@@ -735,7 +735,7 @@
 
 /*STYLING IN SVG IN GREENSLADE FAMILY TREE*/
 
-#thomasAndElizabethGreenslade::after, #georgeAndMatildaGreenslade::after, #georgeAndFirstWifeGreenslade::after {
+#thomasAndElizabethGreenslade::after, #georgeAndMatildaGreenslade::after, #georgeAndRhodaGreenslade::after {
 	content: 'three \00a0\00a0\00a0 children';
     position: relative;
    	left: 6px;
@@ -771,7 +771,7 @@
     display: block;
 }
 
-#georgeAndEvaGreenslade::after {
+#georgeAndEvaGreenslade::after, #elizabethAndFrederickSteer::after {
 	content: 'six \00a0\00a0\00a0 children';
     position: relative;
    	left: 12px;
