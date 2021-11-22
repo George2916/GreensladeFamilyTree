@@ -816,3 +816,34 @@ td {
 .firstColumn, .secondColumn {vertical-align: text-top;}
 
 .thirdColumn {text-align: center;}
+
+/*STYLING FOR MODALS FOR JONATHAN EDWARD GREENSLADE AND RICHARD MICHAEL sIDOROFF*/
+
+.zoomA{margin: 0;}
+
+@media only screen and (min-width: 768px) {
+	
+	.zoomA:hover {
+		cursor: grab;
+	  	transform: scale(2.0);
+	  	transform-origin: left top;
+	  	
+	  	width: 600px;
+	  	height: auto;
+	  	/* ease | ease-in | ease-out | linear */
+	 	transition: transform ease-in-out 0.1s;
+	}
+	
+	.zoomB:hover {
+		cursor: grab;
+	  	transform: scale(2.5);
+	  	transform-origin: left top;
+	  	
+	  	width: 600px;
+	  	height: auto;
+	  	/* ease | ease-in | ease-out | linear */
+	 	transition: transform ease-in-out 0.1s;
+	}
+	
+	
+}
