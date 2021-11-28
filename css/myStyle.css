@@ -817,9 +817,10 @@ td {
 
 .thirdColumn {text-align: center;}
 
-/*STYLING FOR MODALS FOR JONATHAN EDWARD GREENSLADE AND RICHARD MICHAEL sIDOROFF*/
+/*STYLING FOR MODALS FOR JOSEPH EUGENE WALSH, JONATHAN EDWARD GREENSLADE AND RICHARD MICHAEL sIDOROFF*/
+/*STYLING FOR PHOTODOCS OF BESSIE GREENSLADE*/
 
-.zoomA{margin: 0;}
+.zoomA, .zoomB, .zoomC, .zoomC-1 {margin: 0;}
 
 @media only screen and (min-width: 768px) {
 	
@@ -845,5 +846,24 @@ td {
 	 	transition: transform ease-in-out 0.1s;
 	}
 	
+	.zoomC:hover {
+		cursor: grab;
+	  	transform: scale(3.5);
+	  	transform-origin:  top;
+	  	
+	  	width: 600px;
+	  	height: auto;
+	  	/* ease | ease-in | ease-out | linear */
+	 	transition: transform ease-in-out 0.1s;
+	}
+	
 	
 }
+
+@media only screen and (max-width: 767px) {
+	
+	.zoomC-2 {display: none;}	
+}
+
+
+	
