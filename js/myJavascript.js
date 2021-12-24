@@ -42,6 +42,20 @@ function twoPageUnflip3() {
   y.style.display = "block";
 }
 
+function twoPageFirstFlip4() {
+  var x = document.getElementById("PG1of2pages");
+  var y = document.getElementById("PG2of2pages");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function twoPageUnflip4() {
+  var x = document.getElementById("PG2of2pages");
+  var y = document.getElementById("PG1of2pages");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
 function threePageFirstFlip() {
   var x = document.getElementById("p1of3");
   var y = document.getElementById("p2of3");
