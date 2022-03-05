@@ -436,6 +436,7 @@
 }
 
 .tabHeading {
+	color: red;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -874,6 +875,3 @@ td {
 	
 	.zoomC-2 {display: none;}	
 }
-
-
-	
