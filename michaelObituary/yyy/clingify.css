@@ -1,0 +1,33 @@
+/* line 3, clingify.scss */
+/*
+.js-clingify-ztransform, .js-clingify-wrapper {
+  -webkit-transform: translateZ(9999);
+  -moz-transform: translateZ(9999);
+  -ms-transform: translateZ(9999);
+  -o-transform: translateZ(9999);
+  transform: translateZ(9999);
+}
+*/
+
+/* Baseline selectors */
+/* line 10, clingify.scss */
+.js-clingify-wrapper {
+  width: 100%;
+  z-index: 99999;
+}
+
+/* line 14, clingify.scss */
+.js-clingify-locked {
+  left: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+@media (max-width: 767px) {
+	.js-clingify-locked {
+	  left: 0px;
+  }
+}
+
+

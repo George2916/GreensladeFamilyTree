@@ -331,7 +331,7 @@
 
 /* STYLING FOR MORRISON FAMILY TREE*/
 
-.Mtree {width: 8500px;}
+.Mtree {width: 9050px;}
 
 .morrison1 {
 	background: #FF7034;
@@ -875,4 +875,19 @@ td {
 @media only screen and (max-width: 767px) {
 	
 	.zoomC-2 {display: none;}	
+}
+
+/*STYLING FOR TOOLTIP ON MEAHAL DUFFY*/
+
+.meahal {
+	display: inline-block;
+}
+.meahal a {
+	color: #666;
+	text-decoration: none;
+}
+
+.meahal a:hover {
+	color: black;
+	text-decoration: none;
 }
