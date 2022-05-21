@@ -36,7 +36,7 @@
     <script>
         
     var svg = d3.select("body").append("svg")
-            .attr("width",8500).attr("height",800)
+            .attr("width",10800).attr("height",800)
             .append("g").attr("transform", "translate(50,50)");
     
     var data = [{"child":"Edward Joseph Duffy m. Mary \"Mae\" Ellen Torpey", "parent": ""},
@@ -77,11 +77,11 @@
                 {"child":"Laurel Marie Ansbrow", "parent": "Jane Marie Greenslade div. Mark Leonard Ansbrow"},
                    
                 {"child":"Kevin John Duffy m. Bernadette Myles", "parent": "Edward Joseph Duffy m. Mary \"Mae\" Ellen Torpey"},
-                {"child":"Martin Duffy m. Aideen", "parent": "Kevin John Duffy m. Bernadette Myles"},
+                {"child":"Martin Duffy m. Aideen Spellman", "parent": "Kevin John Duffy m. Bernadette Myles"},
                 {"child":"Francis Duffy div. Frank Altro", "parent": "Kevin John Duffy m. Bernadette Myles"},
-                {"child":"Molly Mae Duffy", "parent": "Martin Duffy m. Aideen"},
-                {"child":"Katie Duffy", "parent": "Martin Duffy m. Aideen"},
-                {"child":"Kevin Duffy", "parent": "Martin Duffy m. Aideen"},
+                {"child":"Molly Mae Duffy", "parent": "Martin Duffy m. Aideen Spellman"},
+                {"child":"Katie Duffy", "parent": "Martin Duffy m. Aideen Spellman"},
+                {"child":"Kevin Duffy", "parent": "Martin Duffy m. Aideen Spellman"},
                     
                 {"child":"Meahal \"Michael\" Daniel Duffy unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)", "parent": "Edward Joseph Duffy m. Mary \"Mae\" Ellen Torpey"},
                 {"child":"Mark Andrew Russell m. Brigette Mae Steele", "parent": "Meahal \"Michael\" Daniel Duffy unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)"},
@@ -109,7 +109,7 @@
                     .id(function(d){return d.child;})
                     .parentId(function(d){return d.parent;})
                     (data);
-        var treeStructure = d3.tree().size([8400,550]);
+        var treeStructure = d3.tree().size([10800,550]);
         var information = treeStructure(dataStructure);
         
         var circles = svg.append("g").selectAll("circle")
