@@ -822,7 +822,7 @@ td {
 /*STYLING FOR MODALS FOR JOSEPH EUGENE WALSH, JONATHAN EDWARD GREENSLADE, RICHARD MICHAEL SIDOROFF, ANNIE MAY KNIGHT, ALBERT JAYNES MORRISON, JR.*/
 /*STYLING FOR PHOTODOCS OF BESSIE GREENSLADE*/
 
-.zoomA, .zoomB, .zoomC, .zoomC-1 {margin: 0;}
+.zoomA, .zoomB, .zoomC, .zoomC-1, .zoomE {margin: 0;}
 
 @media only screen and (min-width: 768px) {
 	
@@ -863,6 +863,17 @@ td {
 		cursor: grab;
 	  	transform: scale(2.5);
 	  	transform-origin: bottom;
+	  	
+	  	width: 600px;
+	  	height: auto;
+	  	/* ease | ease-in | ease-out | linear */
+	 	transition: transform ease-in-out 0.1s;
+	}
+	
+	.zoomE:hover {
+		cursor: grab;
+	  	transform: scale(3.5);
+	  	transform-origin: left top;
 	  	
 	  	width: 600px;
 	  	height: auto;
