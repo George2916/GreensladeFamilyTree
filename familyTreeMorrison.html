@@ -1042,9 +1042,9 @@
 			<div class="George2"></div>
 			<div class="George1"><p>Ruth Elizabeth Guinn<br>b. Feb. 10, 1941<br>d. May 13, 2011</p><div class="moreInfoTwo"><a data-bs-toggle="modal" href="#ruthElizabethGuinnModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
 			<div class="George2"><span class="divorceSign">&#10229;&sol;&nbsp;&sol;&#10230;</span><br>m. Feb. 11, 1959</div>
-			<div class="George1"><p>Lawrence "Larry" Wilson<br>b. April 1, 1941<br> d. April 18, 1988</p><div class="moreInfoTwo"><a data-bs-toggle="modal" href="#lawrenceWilsonModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
-			<div class="George2"><p><span class="marriageSign">&#10229;&#10230;</span></p></div>
-			<div class="George1"><p>Wife</p></div>
+			<div class="George1"><p>Lawrence "Larry" Wilson<br>b. April 1, 1941<br>d. April 18, 1988</p><div class="moreInfoTwo"><a data-bs-toggle="modal" href="#lawrenceWilsonModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
+			<div class="George2"><span class="divorceSign">&#10229;&sol;&nbsp;&sol;&#10230;</span><br>m. 1967</div>
+			<div class="George1"><p>Laura Maria Kairis<br>b. April 12, 1948<br>d. Oct. 10, 2022</p><div class="moreInfoTwo"><a data-bs-toggle="modal" href="#lauraMariaKairisModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
 			<div class="George2"></div>
 			<div class="George1"><p>Rita Karen Misiewicz</p></div>
 			<div class="George2"><span class="divorceSign">&#10229;&sol;&nbsp;&sol;&#10230;</span><br>m. Aug. 10, 1968</div>
@@ -1237,6 +1237,33 @@
 							</ul>
 							</p>
 						</div>
+      					</div><!--closes modal-body-->
+    				</div><!--closes .modal-content-->
+  				</div><!--closes .modal-dialog-->
+			</div><!--closes .modal-->
+			
+			<div class="modal fade" id="lauraMariaKairisModal" tabindex="-1" aria-labelledby="lauraMariaKairisLabel" aria-hidden="true">
+  				<div class="modal-dialog modal-Info">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<h6 class="modal-title" id="lauraMariaKairisLabel">Laura Maria Knightt</h6>
+        					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      					</div><!--closes .modal-header-->
+      					<div class="modal-body">
+        					<button class="tablinkLauraMariaKairis tabHeading btn-sm" onclick="openTabLauraMariaKairis(event, 'infoLauraMariaKairis')">Information</button>
+							<button class="tablinkLauraMariaKairis tabHeading btn-sm" onclick="openTabLauraMariaKairis(event, 'picturesLauraMariaKairis')">Picture</button>
+      						<div id="infoLauraMariaKairis" class="tabContentLauraMariaKairis">
+      							<p></p>
+      							<p><p>The following information is derived from the family tree on ancestory.com of the son-in-law of Lawrence "Larry" Wilson:</p></p>
+      							<p>Laura Maria Kairis was born April 12, 1948.</p>
+      							<p>She married Lawrence "Larry" Wilson in 1967. She was his second of five wives.</p>
+      							<p>She had four children with Lawrence "Larry" Wilson (two girls and two boys).</p>
+      							<p>She died on October 10, 2022 in Upper Darby, Pennsylvania.</p>
+							</div>
+							<div id="picturesLauraMariaKairis" class="tabContentLauraMariaKairis">
+								<p></p>
+								<p class="zoomB"><img class="img-fluid" src="images/lauraMariaKairis.jpg"></p><i>Hover over image to see enlarged version.</i></p>
+							</div>
       					</div><!--closes modal-body-->
     				</div><!--closes .modal-content-->
   				</div><!--closes .modal-dialog-->
@@ -1524,7 +1551,7 @@
   				<div class="modal-dialog modal-Info">
     				<div class="modal-content">
       					<div class="modal-header">
-        					<h6 class="modal-title" id="albertJaynesMorrisonLabel">Danielle Nicole Knight</h6>
+        					<h6 class="modal-title" id="danielleNicoleKnightLabel">Danielle Nicole Knight</h6>
         					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       					</div><!--closes .modal-header-->
       					<div class="modal-body">
@@ -1721,7 +1748,7 @@
     		<div class="George2"></div>
 			<div class="George2"></div>
 			<div class="George2"><svg height="52" width="180">
-        		<path d="M 90 -2 l 0 54" style="stroke:#ccc;stroke-width:2" /></svg></div><!--Fourteen grandchildren-->
+        		<path d="M 90 -2 l 0 54" style="stroke:#ccc;stroke-width:2" /></svg></div><!--Nine grandchildren-->
 		
     		<div class="George2"></div>
 			<div class="George2"></div>
@@ -1776,7 +1803,7 @@
 			<div class="George2"></div>
 			<div class="George2"></div>
 			<div class="George2"></div>
-			<div class="George1"><p>Fourteen grandchildren</p></div>
+			<div class="George1"><p>Nine grandchildren</p></div>
 			<div class="George2"></div>
 			<div class="George2"></div>
 			<div class="George2"></div>
@@ -2048,6 +2075,22 @@ function openTabLawrenceWilson(evtLawrenceWilson, ContentLawrenceWilson) {
   }
   document.getElementById(ContentLawrenceWilson).style.display = "block";
   evtLawrenceWilson.currentTarget.classList.add("highlightedTab");
+}
+
+document.getElementsByClassName("tablinkLauraMariaKairis")[0].click();
+
+function openTabLauraMariaKairis(evtLauraMariaKairis, ContentLauraMariaKairis) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentLauraMariaKairis");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkLauraMariaKairis");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentLauraMariaKairis).style.display = "block";
+  evtLauraMariaKairis.currentTarget.classList.add("highlightedTab");
 }
 
 document.getElementsByClassName("tablinkWilliamAbbatte")[0].click();
