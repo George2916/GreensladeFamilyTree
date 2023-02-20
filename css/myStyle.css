@@ -902,3 +902,7 @@ td {
 	color: black;
 	text-decoration: none;
 }
+
+.modalIndent {
+	margin-left: 15px;
+}
