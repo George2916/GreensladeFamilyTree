@@ -98,6 +98,27 @@ function threePageUnflip2() {
   y.style.display = "block";
 }
 
+function threePageFirstFlip3() {
+  var x = document.getElementById("page1of3pages");
+  var y = document.getElementById("page2of3pages");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function threePageSecondFlip3() {
+  var x = document.getElementById("page2of3pages");
+  var y = document.getElementById("page3of3pages");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function threePageUnflip3() {
+  var x = document.getElementById("page3of3pages");
+  var y = document.getElementById("page1of3pages");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
 function fivePageFirstFlip() {
   var x = document.getElementById("p1of5");
   var y = document.getElementById("p2of5");
