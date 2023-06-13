@@ -2746,19 +2746,29 @@
 	</div><!--closes .modal-->
 	
 	<div class="modal fade" id="thomasGreensladeBorn1836Modal" tabindex="-1" aria-labelledby="thomasGreensladeBorn1836Label" aria-hidden="true">
-  		<div class="modal-dialog modal-Info">
-			<div class="modal-content">
-  				<div class="modal-header">
-					<h6 class="modal-title" id="thomasGreensladeBorn1864Label">Thomas Greenslade</h6>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-  				</div><!--closes .modal-header-->
-  				<div class="modal-body">
-  					<p>Christened February 28, 1836 in Bishop's Nympton, county of Devon, England.</p>
-  				</div><!--closes .modal-body-->
-			</div><!--closes .modal-content-->
-  		</div><!--closes .modal-dialog-->
+	  <div class="modal-dialog modal-Info">
+		<div class="modal-content">
+	  		<div class="modal-header">
+				<h6 class="modal-title" id="thomasGreensladeBorn1836Label">Thomas Greenslade</h6>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	  		</div><!--closes .modal-header-->
+	  		<div class="modal-body">
+				<button class="tablinkThomasGreensladeBorn1836 tabHeading btn-sm" onclick="openTabThomasGreensladeBorn1836(event, 'infoThomasGreensladeBorn1836')">Information</button>
+				<button class="tablinkThomasGreensladeBorn1836 tabHeading btn-sm" onclick="openTabThomasGreensladeBorn1836(event, 'docsThomasGreensladeBorn1836')">Documents</button>
+	  			<div id="infoThomasGreensladeBorn1836" class="tabContentThomasGreensladeBorn1836">
+	  				<p></p>
+	  				<p>Baptised in the parish of Bishops Nympton, county of Devon, England on February 28, 1836.</p>
+				</div>
+				<div id="docsThomasGreensladeBorn1836" class="tabContentThomasGreensladeBorn1836">
+					<p></p>
+					<p><a href="photoDocsThomasGreensladeBorn1836.html" class="docLink">Record of baptism&nbsp;&#x2197;</a></p>
+				</div>
+	  		</div><!--closes modal-body-->
+		</div><!--closes .modal-content-->
+	  </div><!--closes .modal-dialog-->
 	</div><!--closes .modal-->
-
+	
+	
 </div>	
 	
 <div class="George5">
@@ -9464,6 +9474,22 @@ function openTabGeorgeGreensladeBorn1833(evtGeorgeGreensladeBorn1833, ContentGeo
   }
   document.getElementById(ContentGeorgeGreensladeBorn1833).style.display = "block";
   evtGeorgeGreensladeBorn1833.currentTarget.classList.add("highlightedTab");
+}
+
+document.getElementsByClassName("tablinkThomasGreensladeBorn1836")[0].click();
+
+function openTabThomasGreensladeBorn1836(evtThomasGreensladeBorn1836, ContentThomasGreensladeBorn1836) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentThomasGreensladeBorn1836");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkThomasGreensladeBorn1836");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentThomasGreensladeBorn1836).style.display = "block";
+  evtThomasGreensladeBorn1836.currentTarget.classList.add("highlightedTab");
 }
 
 document.getElementsByClassName("tablinkWilliamHenryGreenslade")[0].click();
