@@ -500,7 +500,7 @@
 	text-align: center;
 }
 
-/*the next 4 items create the styling for the button at the top of photo[name].html and photoDocs[name}.html*/
+/*the next 6 items create the styling for the button at the top of photo[name].html, photoDocs[name}.html and carouselGeorgeAlfredGreensladeII.html*/
 
 #headingZZZ {
 	font-family: arial, verdana, tahoma;
@@ -517,7 +517,22 @@
 	opacity: 0.5;
 }
 
+#btn-AAA {
+	background: #9B533B;
+	border-style: hidden;
+	color: #000;
+	font-family: arial, verdana, tahoma;
+	font-size: 140%;
+	opacity: 0.5;
+}
+
 #btn-ZZZ:hover {
+	cursor: grab;
+	opacity: 1.0;
+}
+
+#btn-AAA:hover {
+	background: #00FFFF;
 	cursor: grab;
 	opacity: 1.0;
 }
@@ -527,7 +542,7 @@
     font-size: 85%;
   }
   
-  #btn-ZZZ {
+  #btn-ZZZ, #btn-AAA:hover {
   	font-size: 100%;}
 }
 
@@ -773,16 +788,7 @@
     display: block;
 }
 
-#georgeAndJaneGreenslade::after {
-	content: 'five \00a0\00a0\00a0 children';
-    position: relative;
-   	left: 10px;
-   	top: -41px;
-    color: #666;
-    display: block;
-}
-
-#georgeAndEvaGreenslade::after, #elizabethAndFrederickSteer::after {
+#georgeAndJaneGreenslade::after, #georgeAndEvaGreenslade::after, #elizabethAndFrederickSteer::after {
 	content: 'six \00a0\00a0\00a0 children';
     position: relative;
    	left: 12px;
