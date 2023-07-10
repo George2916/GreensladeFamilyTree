@@ -194,7 +194,7 @@
 
 /* make text of "More Info" and "Pictures(1)" under George Aflred Greenslade, born 1864 smaller when viewed on smaller devices */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   #smallFont {font-size: 95%}
 }
 
