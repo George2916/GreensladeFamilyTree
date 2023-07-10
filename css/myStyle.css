@@ -192,6 +192,12 @@
 	font-size: 125%;
 }
 
+/* make text of "More Info" and "Pictures(1)" under George Aflred Greenslade, born 1864 smaller when viewed on smaller devices */
+
+@media only screen and (max-width: 400px) {
+  #smallFont {font-size: 95%}
+}
+
 /*STYLING FOR KO FAMILY TREE*/
 
 .Ktree {width: 1300px;}
