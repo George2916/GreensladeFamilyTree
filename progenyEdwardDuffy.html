@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/myStyle2.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+<title>Progeny of Edward Duffy and Mae Torpey</title>
+
+    <script src="js/d3.min.v6.7.0.js"></script>
+   
+</head>
+
+<body class="progenyDuffyDiv">
+    
+    <div class="container-fluid">
+  
+  <div>
+    <div class="progenyEdwardDuffyA"></div>
+	  <div class="progenyEdwardDuffyB" id="progeny">Progeny of Edward Joseph Duffy and Mary "Mae" Ellen Torpey</div>
+	  <div class="progenyEdwardDuffyC"></div>
+  </div>
+  
+  </div>
+   
+    <script>
+        
+    var svg = d3.select("body").append("svg")
+            .attr("width",29000).attr("height",800)
+            .append("g").attr("transform", "translate(50,50)");
+    
+    var data = [{"child":"Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)", "parent": ""},
+    
+                {"child":"Edward Joseph Duffy (1935 - 2001) m. Eileen Mary Cronin (b. 1938)", "parent": "Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)"},
+                {"child":"James Matthew Duffy (b. 1967) m. Stephanie Weaver (b. 1967)", "parent": "Edward Joseph Duffy (1935 - 2001) m. Eileen Mary Cronin (b. 1938)"},
+                {"child":"Christine Anne Duffy (b. 1969) m. Jonathan Alan Levy (b. 1970)", "parent": "Edward Joseph Duffy (1935 - 2001) m. Eileen Mary Cronin (b. 1938)"},
+                {"child":"Neal Edward Duffy (b. 1975) m. Kierstan Fitzpatcick (b. 1975)", "parent": "Edward Joseph Duffy (1935 - 2001) m. Eileen Mary Cronin (b. 1938)"},
+                {"child":"Matthew Edward Duffy (b. 2006)", "parent": "James Matthew Duffy (b. 1967) m. Stephanie Weaver (b. 1967)"},
+                {"child":"Michael Calvin Duffy (b. 2008)", "parent": "James Matthew Duffy (b. 1967) m. Stephanie Weaver (b. 1967)"},
+                {"child":"Anna Edward Levy (b. 2003)", "parent": "Christine Anne Duffy (b. 1969) m. Jonathan Alan Levy (b. 1970)"},
+                {"child":"Benjamin Evan Levy (b. 2005)", "parent": "Christine Anne Duffy (b. 1969) m. Jonathan Alan Levy (b. 1970)"},
+                {"child":"Sophie Grace Levy  (b. 2007)", "parent": "Christine Anne Duffy (b. 1969) m. Jonathan Alan Levy (b. 1970)"},
+                {"child":"Kieran Duffy (b. 2005)", "parent": "Neal Edward Duffy (b. 1975) m. Kierstan Fitzpatcick (b. 1975)"},
+                {"child":"Kevin Duffy (b. 2007)", "parent": "Neal Edward Duffy (b. 1975) m. Kierstan Fitzpatcick (b. 1975)"},
+                {"child":"Kyle Duffy (b. 2010)", "parent": "Neal Edward Duffy (b. 1975) m. Kierstan Fitzpatcick (b. 1975)"},
+                {"child":"Keegan Duffy", "parent": "Neal Edward Duffy (b. 1975) m. Kierstan Fitzpatcick (b. 1975)"},
+                    
+                {"child":"James Patrick Duffy (1936 - 2022) m. Patricia Perry", "parent": "Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)"},
+                {"child":"Jay Duffy (b. 1971) div. Petra Podiahova", "parent": "James Patrick Duffy (1936 - 2022) m. Patricia Perry"},
+                {"child":"Robyn Duffy (1975 -2008)", "parent": "James Patrick Duffy (1936 - 2022) m. Patricia Perry"},
+                {"child":"Deena Duffy (b. 1992)", "parent": "Robyn Duffy (1975 -2008)"},
+                {"child":"Boy", "parent": "Robyn Duffy (1975 -2008)"},
+                    
+                {"child":"Marie Ann Duffy (b. 1939) m. George Alfred Greenslade II (1938 - 2021)", "parent": "Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)"},
+                {"child":"George Alfred Greenslade III (b. 1961) m. Sunghee Ko (b. 1962)", "parent": "Marie Ann Duffy (b. 1939) m. George Alfred Greenslade II (1938 - 2021)"},
+                {"child":"Corrine Ann Greenslade (1962 - 1962)", "parent": "Marie Ann Duffy (b. 1939) m. George Alfred Greenslade II (1938 - 2021)"},
+                {"child":"Stephen Joseph Greenslade (1963 - 2013) m. Lori Ann Johnson (b. 1970)", "parent": "Marie Ann Duffy (b. 1939) m. George Alfred Greenslade II (1938 - 2021)"},
+                {"child":"Kenneth Michael Greenslade (b. 1963) div. Jennifer Eileen Tomaselli (b. 1965) (for Colin) / m. Donna Lynn Schneider (b. 1969)", "parent": "Marie Ann Duffy (b. 1939) m. George Alfred Greenslade II (1938 - 2021)"},
+                {"child":"Jane Marie Greenslade (b. 1965) div. Mark Leonard Ansbrow (b. 1960)", "parent": "Marie Ann Duffy (b. 1939) m. George Alfred Greenslade II (1938 - 2021)"},
+                {"child":"George Alfred Greenslade IV (2002 - 2016)", "parent": "George Alfred Greenslade III (b. 1961) m. Sunghee Ko (b. 1962)"},
+                {"child":"Haley Kathleen Greenslade (b. 1995)", "parent": "Stephen Joseph Greenslade (1963 - 2013) m. Lori Ann Johnson (b. 1970)"},
+                {"child":"Abigail Maeve Greenslade (b. 1997)", "parent": "Stephen Joseph Greenslade (1963 - 2013) m. Lori Ann Johnson (b. 1970)"},
+                {"child":"Aidan Charles Greenslade (b. 2000)", "parent": "Stephen Joseph Greenslade (1963 - 2013) m. Lori Ann Johnson (b. 1970)"},
+                {"child":"Harrison Woodell Greenslade (b.2002)", "parent": "Stephen Joseph Greenslade (1963 - 2013) m. Lori Ann Johnson (b. 1970)"},
+                {"child":"Colin Daniel Tomaselli-Greenslade (b. 1993) m. Marie Leo Garcia (b. 1994)", "parent": "Kenneth Michael Greenslade (b. 1963) div. Jennifer Eileen Tomaselli (b. 1965) (for Colin) / m. Donna Lynn Schneider (b. 1969)"},
+                {"child":"Sarah Jane Ansbrow (b. 2000)", "parent": "Jane Marie Greenslade (b. 1965) div. Mark Leonard Ansbrow (b. 1960)"},
+                {"child":"Laurel Marie Ansbrow (b. 2003)", "parent": "Jane Marie Greenslade (b. 1965) div. Mark Leonard Ansbrow (b. 1960)"},
+                   
+                {"child":"Kevin John Duffy (b. 1941)  m. Bernadette Myles (d. 2013)", "parent": "Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)"},
+                {"child":"Martin Duffy (b. 1973) m. Aideen Spellman (b. 1971)", "parent": "Kevin John Duffy (b. 1941)  m. Bernadette Myles (d. 2013)"},
+                {"child":"Francis Duffy (b. 1975) div. Frank Altro (b. 1975)", "parent": "Kevin John Duffy (b. 1941)  m. Bernadette Myles (d. 2013)"},
+                {"child":"Molly Mae Duffy (b. 2006)", "parent": "Martin Duffy (b. 1973) m. Aideen Spellman (b. 1971)"},
+                {"child":"Kaitlyn Duffy (b. 2008)", "parent": "Martin Duffy (b. 1973) m. Aideen Spellman (b. 1971)"},
+                {"child":"Kevin Patrick Duffy  (b. 2010)", "parent": "Martin Duffy (b. 1973) m. Aideen Spellman (b. 1971)"},
+                    
+                {"child":"Meahal \"Michael\" Daniel Duffy (1944 - 2022) unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)", "parent": "Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)"},
+                {"child":"Mark Andrew Russell m. Brigette Mae Steele", "parent": "Meahal \"Michael\" Daniel Duffy (1944 - 2022) unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)"},
+                {"child":"Tyler Liam Duffy (b. 1974) m. Teresa Ann Becker (b. 1981)", "parent": "Meahal \"Michael\" Daniel Duffy (1944 - 2022) unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)"},
+                {"child":"Owen Christopher Duffy (b. 1977) m. Elizabeth Hutchinson (b. 1979)", "parent": "Meahal \"Michael\" Daniel Duffy (1944 - 2022) unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)"},
+                {"child":"Allison Kate Duffy (b. 1979) m. Jeffrey Weber (b. 1977)", "parent": "Meahal \"Michael\" Daniel Duffy (1944 - 2022) unm. to Joanne Richmond (for Mark) / div. Sandra Hixon Smith (for Tyler, Owen and Allison)"},
+                {"child":"Derek Matthew Russell", "parent": "Mark Andrew Russell m. Brigette Mae Steele"},
+                {"child":"Sydney Mae Russell", "parent": "Mark Andrew Russell m. Brigette Mae Steele"},
+                {"child":"Kayla Grace Russell", "parent": "Mark Andrew Russell m. Brigette Mae Steele"},
+                {"child":"Megan Rose Russell", "parent": "Mark Andrew Russell m. Brigette Mae Steele"},
+                {"child":"Everette Noel Russell", "parent": "Mark Andrew Russell m. Brigette Mae Steele"},
+                {"child":"Pippa Kelley Russell", "parent": "Mark Andrew Russell m. Brigette Mae Steele"},
+                {"child":"Keenan Liam Duffy", "parent": "Tyler Liam Duffy (b. 1974) m. Teresa Ann Becker (b. 1981)"},
+                {"child":"Nolan Grant Duffy", "parent": "Tyler Liam Duffy (b. 1974) m. Teresa Ann Becker (b. 1981)"},
+                {"child":"Girl", "parent": "Owen Christopher Duffy (b. 1977) m. Elizabeth Hutchinson (b. 1979)"},
+                {"child":"Girl", "parent": "Owen Christopher Duffy (b. 1977) m. Elizabeth Hutchinson (b. 1979)"},
+                {"child":"Declan Weber", "parent": "Allison Kate Duffy (b. 1979) m. Jeffrey Weber (b. 1977)"},
+                {"child":"Chloe Weber", "parent": "Allison Kate Duffy (b. 1979) m. Jeffrey Weber (b. 1977)"},
+                
+                {"child":"Brian Anthony Duffy (b. 1948) div. Danielle Beaulieu / div. Connie Stavros (b. 1949) (for Tyne and Reine) / div. Mimi Hofsommer  (b. 1953)", "parent": "Edward Joseph Duffy (1907 - 1975) m. Mary \"Mae\" Ellen Torpey (1908 - 2004)"},
+                {"child":"Tyne Alicia Duffy (b. 1982)", "parent": "Brian Anthony Duffy (b. 1948) div. Danielle Beaulieu / div. Connie Stavros (b. 1949) (for Tyne and Reine) / div. Mimi Hofsommer  (b. 1953)"},
+                {"child":"Reine Elizabeth Duffy (b. 1986)", "parent": "Brian Anthony Duffy (b. 1948) div. Danielle Beaulieu / div. Connie Stavros (b. 1949) (for Tyne and Reine) / div. Mimi Hofsommer  (b. 1953)"},
+            ];
+        var dataStructure = d3.stratify()
+                    .id(function(d){return d.child;})
+                    .parentId(function(d){return d.parent;})
+                    (data);
+        var treeStructure = d3.tree().size([29000,550]);
+        var information = treeStructure(dataStructure);
+        
+        var circles = svg.append("g").selectAll("circle")
+                    .data(information.descendants());
+        circles.enter().append("circle")
+            .attr("cx", function(d){return d.x;})
+            .attr("cy", function(d){return d.y;})
+            .attr("r",7);
+        
+        var connections = svg.append("g").selectAll("path")
+                    .data(information.links());
+        connections.enter().append("path")
+            .attr("d", function(d){
+                return "M" + d.source.x + "," + d.source.y + " C " + d.source.x + "," + (d.source.y + d.target.y)/2 + " "
+                + d.target.x + "," + (d.source.y + d.target.y)/2 + " "
+                + d.target.x + "," + d.target.y;                
+                
+            });
+            
+        var names = svg.append("g").selectAll("text")
+                    .data(information.descendants());
+        names.enter().append("text")
+                .text(function(d){return d.data.child;})
+                .attr("x", function(d){return d.x+7;})
+                .attr("y", function(d){return d.y+4;})
+    </script>
+    
+    <script src="js/d3.min.v6.7.0.js"></script>
+    
+</body>
+</html>

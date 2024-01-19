@@ -1,12 +1,12 @@
 /*CSS FOR PROGENY OF EDWARD DUFFY AND MAE TORPEY*/
 
-.duffyDiv {
+.progenyDuffyDiv {
     display: inline-block;
     height: 50px;
-    width: 10800px;
+    width: 29000px;
 }
 
-.duffy2A {
+.progenyEdwardDuffyA {
 	background: #b22234;
 	border-radius: 5px 0px 0px 5px;
 	-webkit-border-radius: 5px 0px 0px 5px;
@@ -14,12 +14,12 @@
 	-o-border-radius: 5px 0px 0px 5px;
 	display: inline-block;
 	height: 50px;
-	margin: 5px -3px 5px 4700px;
+	margin: 5px -3px 5px 14525px;
 	width: 800px;
 	vertical-align: text-bottom;
 }
 
-.duffy2B {
+.progenyEdwardDuffyB {
 	background: #f0ead6;
 	display: inline-block;
 	font-family: 'Itim', arial, verdana;
@@ -32,7 +32,7 @@
 	vertical-align: text-bottom;
 }
 
-.duffy2C {
+.progenyEdwardDuffyC {
 	background: #0A3161;
 	border-radius: 0px 5px 5px 0px;
 	-webkit-border-radius: 0px 5px 5px 0px;
@@ -53,3 +53,191 @@ path {fill: none;
 
 body {font-size: 83%;}
 
+/*CSS FOR PROGENY OF KATHLEEN DUFFY AND JAMES COBURN*/
+
+.progenyCoburnDiv {
+    display: inline-block;
+    height: 50px;
+    width: 1500px;
+}
+
+.progenyCoburnA {
+	background: #B31942;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 100px;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+.progenyCoburnB {
+	background: #f0ead6;
+	display: inline-block;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	margin: 5px -2px 5px -2px;
+	text-align: center;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+.progenyCoburnC {
+	background: #0A3161;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px 0px 5px -3px;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+/*CSS FOR PROGENY OF KEVIN DUFFY AND UNA BEGLEY*/
+
+.progenyKevinBody {
+    display: inline-block;
+    height: 50px;
+    width: 2000px;
+}
+
+.progenyKevinA {
+	background: #169B62;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 450px;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+.progenyKevinB {
+	background: #f0ead6;
+	display: inline-block;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	margin: 5px -2px 5px -2px;
+	text-align: center;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+.progenyKevinC {
+	background: #FF883E;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px 0px 5px -3px;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+/*CSS FOR PROGENY OF UNA DUFFY AND SAM MEDLICOTT*/
+
+.progenyMedlicottBody {
+    display: inline-block;
+    height: 50px;
+    width: 2000px;
+}
+
+.progenyMedlicottA {
+	background: #C8102E;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 250px;
+	width: 500px;
+	vertical-align: text-bottom;
+}
+
+.progenyMedlicottB {
+	background: #FFFFFF;
+	border: 1px solid black;
+	display: inline-block;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	margin: 5px -2px 5px -2px;
+	text-align: center;
+	width: 500px;
+	vertical-align: text-bottom;
+}
+
+.progenyMedlicottC {
+	background: #012169;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px 0px 5px -3px;
+	width: 500px;
+	vertical-align: text-bottom;
+}
+
+/*CSS FOR PROGENY OF MARY ANN DUFFY AND THOMAS SCANLON*/
+
+.progenyScanlonBody {
+    display: inline-block;
+    height: 50px;
+    width: 15000px;
+}
+
+.progenyScanlonA {
+	background: #B31942;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 10725px;
+	width: 800px;
+	vertical-align: text-bottom;
+}
+
+.progenyScanlonB {
+	background: #f0ead6;
+	display: inline-block;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	margin: 5px -2px 5px -2px;
+	text-align: center;
+	width: 800px;
+	vertical-align: text-bottom;
+}
+
+.progenyScanlonC {
+	background: #0A3161;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px 0px 5px -3px;
+	width: 800px;
+	vertical-align: text-bottom;
+}

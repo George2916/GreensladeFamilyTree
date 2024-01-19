@@ -232,7 +232,7 @@
 
 /*STYLING FOR DUFFY, LEO GARCIA, SCHNEIDER AND SIDOROFF FAMILY TREES*/
 
-.duffyTree {width: 2800px;}
+.duffyTree {width: 3500px;}
 
 .LGtree {width: 1350px;}
 
@@ -247,9 +247,9 @@
 	-moz-border-radius: 5px 0px 0px 5px;
 	-o-border-radius: 5px 0px 0px 5px;
 	display: inline-block;
-	height: 50px;
-	margin: 5px -3px 5px 724px;
-	width: 300px;
+	height: 71px;
+	margin: 25px -185px -25px 850px;
+	width: 600px;
 	vertical-align: text-bottom;
 }
 
@@ -262,7 +262,8 @@
 	margin: 5px -2px 5px -2px;
 	padding-top: 10px;
 	text-align: center;
-	width: 300px;
+	/* width: 300px; */
+	width: 600px;
 	vertical-align: text-bottom;
 }
 
@@ -273,13 +274,13 @@
 	-moz-border-radius: 0px 5px 5px 0px;
 	-o-border-radius: 0px 5px 5px 0px;
 	display: inline-block;
-	height: 50px;
-	margin: 5px 0px 5px -3px;
-	width: 300px;
+	height: 71px;
+	margin: 5px 0px -25px -5px;
+	width: 600px;
 	vertical-align: text-bottom;
 }
 
-/*.leoGarcia1A - 1C are uses to create the colors of the Peruvian flag on the Leo Garcia family tree*/
+/*.leoGarcia1A - 1C are used to create the colors of the Peruvian flag on the Leo Garcia family tree*/
     
 .leoGarcia1A {
 	background: #D91023;
@@ -715,6 +716,18 @@
 	width: 1628px;
 }
 
+.navbarDuffy {
+	background: #f0ead6;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	display: inline-block;
+	font-family: arial, verdana, tahoma;
+	margin: 5px 0px 25px 180px;
+	width: 600px;
+}
+
 .navbar-brand {
 	font-family: 'Itim', arial, verdana;
 }
@@ -746,6 +759,11 @@
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
 }
+
+.dropdown-item:active {background-color: #00FFFF;
+	color:black;
+}
+.dropdown-item:visited {background-color: #00FFFF;}
 
 .georgeNB1 {
 	display: inline-block;

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/myStyle2.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+<title>Progeny of Mary Ann Duffy and Thomas Scanlon</title>
+
+    <script src="js/d3.min.v6.7.0.js"></script>
+   
+</head>
+
+<body class="progenyScanlonBody">
+    
+    <div class="container-fluid">
+  
+  <div>
+    <div class="progenyScanlonA"></div>
+	  <div class="progenyScanlonB" id="progeny">Progeny of Mary Ann Duffy and Thomas Michael Scanlon</div>
+	  <div class="progenyScanlonC"></div>
+  </div>
+  
+  </div>
+   
+    <script>
+        
+    var svg = d3.select("body").append("svg")
+            .attr("width",23000).attr("height",620)
+            .append("g").attr("transform", "translate(50,50)");
+    
+    var data = [{"child":"Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)", "parent": ""},
+    
+                {"child":"Mary M. Scanlon (b. 1931) m. Larry Christie (d. 1996)", "parent": "Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)"},
+                {"child":"Kevin Christie (b. 1963)", "parent": "Mary M. Scanlon (b. 1931) m. Larry Christie (d. 1996)"},
+                {"child":"Brian Christie (b. 1966) m. unknown", "parent": "Mary M. Scanlon (b. 1931) m. Larry Christie (d. 1996)"},
+                {"child":"Patricia Christie (b. 1969)", "parent": "Mary M. Scanlon (b. 1931) m. Larry Christie (d. 1996)"},
+                {"child":"Two children", "parent": "Brian Christie (b. 1966) m. unknown"},
+                
+                {"child":"Ann Scanlon m. Thomas Lane", "parent": "Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)"},
+                {"child":"Four children", "parent": "Ann Scanlon m. Thomas Lane"},
+                
+                {"child":"Winifred \"Una\" Scanlon (b. 1934) m. John R. Kelleher", "parent": "Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)"},
+                {"child":"Ann Marie Kelleher (b. 1957) m. Stanley Levy", "parent": "Winifred \"Una\" Scanlon (b. 1934) m. John R. Kelleher"},
+                {"child":"Kathleen Kelleher (b. 1959) m. John Kelly", "parent": "Winifred \"Una\" Scanlon (b. 1934) m. John R. Kelleher"},
+                {"child":"John Raymond Kelleher (b. 1960) m. Monique De Chimay", "parent": "Winifred \"Una\" Scanlon (b. 1934) m. John R. Kelleher"},
+                {"child":"James Christopher Kelleher (b. 1963) m. Lisa Ma Lind", "parent": "Winifred \"Una\" Scanlon (b. 1934) m. John R. Kelleher"},
+                {"child":"Daniel Martin Levy (b. 1990)", "parent": "Ann Marie Kelleher (b. 1957) m. Stanley Levy"},
+                {"child":"Michael Thomas Levy (b. 1994)", "parent": "Ann Marie Kelleher (b. 1957) m. Stanley Levy"},
+                {"child":"John Ryan Kelly (b. 1990)", "parent": "Kathleen Kelleher (b. 1959) m. John Kelly"},
+                {"child":"Michelle Mary Kelleher (b. 1984)", "parent": "John Raymond Kelleher (b. 1960) m. Monique De Chimay"},
+                {"child":"Sean Raymond Kelleher (b. 1988)", "parent": "John Raymond Kelleher (b. 1960) m. Monique De Chimay"},
+                {"child":"Marissa Ann Kelleher (b. 1993)", "parent": "James Christopher Kelleher (b. 1963) m. Lisa Ma Lind"},
+                {"child":"Jessica Marie Kelleher (b. 1996)", "parent": "James Christopher Kelleher (b. 1963) m. Lisa Ma Lind"},
+                
+                {"child":"Patrick Scanlon (b. 1936) m. Sarah Veronica Reid", "parent": "Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)"},
+                {"child":"Thomas J. Scanlon (b. 1964) m. Mary Boohan", "parent": "Patrick Scanlon (b. 1936) m. Sarah Veronica Reid"},
+                {"child":"Mary T. Scanlon (b. 1965) m. Sean McDonald", "parent": "Patrick Scanlon (b. 1936) m. Sarah Veronica Reid"},
+                {"child":"Eugene Patrick Scanlon (b. 1968) m. Maria Lavarez", "parent": "Patrick Scanlon (b. 1936) m. Sarah Veronica Reid"},
+                {"child":"John F. Scanlon m. Jean Burrell", "parent": "Patrick Scanlon (b. 1936) m. Sarah Veronica Reid"},
+                {"child":"Eamon Scanlon (b. 1980)", "parent": "Patrick Scanlon (b. 1936) m. Sarah Veronica Reid"},
+                {"child":"Ashling Scanlon (b. 1990)", "parent": "Thomas J. Scanlon (b. 1964) m. Mary Boohan"},
+                {"child":"Eoin Scanlon (b. 1995)", "parent": "Thomas J. Scanlon (b. 1964) m. Mary Boohan"},
+                {"child":"Ciara Scanlon (b. 1995)", "parent": "Thomas J. Scanlon (b. 1964) m. Mary Boohan"},
+                {"child":"Erin McDonald", "parent": "Mary T. Scanlon (b. 1965) m. Sean McDonald"},
+                {"child":"Tara McDonald", "parent": "Mary T. Scanlon (b. 1965) m. Sean McDonald"},
+                {"child":"Noel Scanlon", "parent": "Eugene Patrick Scanlon (b. 1968) m. Maria Lavarez"},
+                {"child":"Cayle Scanlon", "parent": "John F. Scanlon m. Jean Burrell"},
+                {"child":"Aiden Scanlon", "parent": "John F. Scanlon m. Jean Burrell"},
+                
+                {"child":"Thomas Scanlon (b. 1937) m. Celia Kilcoyne (d. 1980) (for Thomas and Anthony) / m. Margaret Henry (no children)", "parent": "Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)"},
+                {"child":"Thomas Scanlon (b. 1963)", "parent": "Thomas Scanlon (b. 1937) m. Celia Kilcoyne (d. 1980) (for Thomas and Anthony) / m. Margaret Henry (no children)"},
+                {"child":"Anthony Scanlon (1965 - 1992)", "parent": "Thomas Scanlon (b. 1937) m. Celia Kilcoyne (d. 1980) (for Thomas and Anthony) / m. Margaret Henry (no children)"}, 
+                
+                {"child":"Anthony Scanlon (b. 1940)", "parent": "Mary Ann Duffy (1905 - 1980) m. Thomas Michael Scanlon (d. 1972)"},
+                
+            ];
+        var dataStructure = d3.stratify()
+                    .id(function(d){return d.child;})
+                    .parentId(function(d){return d.parent;})
+                    (data);
+        var treeStructure = d3.tree().size([23000,550]);
+        var information = treeStructure(dataStructure);
+        
+        var circles = svg.append("g").selectAll("circle")
+                    .data(information.descendants());
+        circles.enter().append("circle")
+            .attr("cx", function(d){return d.x;})
+            .attr("cy", function(d){return d.y;})
+            .attr("r",7);
+        
+        var connections = svg.append("g").selectAll("path")
+                    .data(information.links());
+        connections.enter().append("path")
+            .attr("d", function(d){
+                return "M" + d.source.x + "," + d.source.y + " C " + d.source.x + "," + (d.source.y + d.target.y)/2 + " "
+                + d.target.x + "," + (d.source.y + d.target.y)/2 + " "
+                + d.target.x + "," + d.target.y;                
+                
+            });
+            
+        var names = svg.append("g").selectAll("text")
+                    .data(information.descendants());
+        names.enter().append("text")
+                .text(function(d){return d.data.child;})
+                .attr("x", function(d){return d.x+7;})
+                .attr("y", function(d){return d.y+4;})
+    </script>
+    
+    <script src="js/d3.min.v6.7.0.js"></script>
+    
+</body>
+</html>
