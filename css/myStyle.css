@@ -1,6 +1,6 @@
 /*STYLING FOR INDEX.HTML*/
 
-.tree {width: 39400px;}
+.tree {width: 39760px;}
 
 .George1 {
 	background: #00FFFF;
@@ -785,10 +785,19 @@
 
 /*STYLING IN SVG IN GREENSLADE FAMILY TREE*/
 
-#thomasAndElizabethGreenslade::after, #georgeAndMatildaGreenslade::after, #georgeAndRhodaGreenslade::after {
+#thomasAndElizabethGreenslade::after, #georgeAndRhodaGreenslade::after {
 	content: 'three \00a0\00a0\00a0 children';
     position: relative;
    	left: 6px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#georgeAndMatildaGreenslade::after {
+	content: 'four \00a0\00a0\00a0 children';
+    position: relative;
+   	left: 9px;
    	top: -41px;
     color: #666;
     display: block;
