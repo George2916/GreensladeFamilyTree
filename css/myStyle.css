@@ -1,6 +1,6 @@
 /*STYLING FOR INDEX.HTML*/
 
-.tree {width: 39760px;}
+.tree {width: 40840px;}
 
 .George1 {
 	background: #00FFFF;
@@ -796,6 +796,15 @@
 
 #georgeAndMatildaGreenslade::after {
 	content: 'four \00a0\00a0\00a0 children';
+    position: relative;
+   	left: 9px;
+   	top: -41px;
+    color: #666;
+    display: block;
+}
+
+#maudeAndOtisBurnette::after {
+	content: 'five \00a0\00a0\00a0 children';
     position: relative;
    	left: 9px;
    	top: -41px;
