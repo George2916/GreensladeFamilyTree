@@ -1,6 +1,6 @@
 /*STYLING FOR INDEX.HTML*/
 
-.tree {width: 40840px;}
+.tree {width: 40660px;}
 
 .George1 {
 	background: #00FFFF;
@@ -23,7 +23,7 @@
 .George1 p {text-align: center;}
 
 .George2 {
-	background: white;
+	background: yellow;
 	display: inline-block;
 	font-family: arial, verdana, tahoma;
 	font-size: 11px;
@@ -803,7 +803,7 @@
     display: block;
 }
 
-#maudeAndOtisBurnette::after {
+#maudeAndOtisBurnett::after {
 	content: 'five \00a0\00a0\00a0 children';
     position: relative;
    	left: 9px;

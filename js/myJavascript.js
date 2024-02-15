@@ -119,6 +119,33 @@ function threePageUnflip3() {
   y.style.display = "block";
 }
 
+function fourPageFirstFlip() {
+  var x = document.getElementById("p1of4");
+  var y = document.getElementById("p2of4");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function fourPageSecondFlip() {
+  var x = document.getElementById("p2of4");
+  var y = document.getElementById("p3of4");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function fourPageThirdFlip() {
+  var x = document.getElementById("p3of4");
+  var y = document.getElementById("p4of4");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function fourPageUnflip() {
+  var x = document.getElementById("p4of4");
+  var y = document.getElementById("p1of4");
+  x.style.display = "none";
+  y.style.display = "block";
+}
 function fivePageFirstFlip() {
   var x = document.getElementById("p1of5");
   var y = document.getElementById("p2of5");
