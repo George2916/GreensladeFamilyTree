@@ -61,6 +61,12 @@
 
 .George5 {position: relative;}
 
+.sticky {
+	position: sticky;
+	left:0;
+	z-index:10;
+}
+
 .divorceSign {
 	font-size: 225%;
 	letter-spacing: -5.5px;
