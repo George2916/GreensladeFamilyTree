@@ -244,6 +244,8 @@
 
 .SchnTree {width: 945px;}
 
+.stevensTree {width: 2400px;}
+
 /*.duffy1A - 1C are used to create the colors of the Irish flag on Duffy family tree*/
     
 .duffy1A {
@@ -337,6 +339,21 @@
 	font-size: 18px;
 	height: 50px;
 	margin: 5px 0px 5px 0;
+	padding-top: 10px;
+	text-align: center;
+	width: 904px;
+}
+
+.stevens1 {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	font-family: 'Itim', arial, verdana;
+	font-size: 18px;
+	height: 50px;
+	margin: 5px 0px 5px 720px;
 	padding-top: 10px;
 	text-align: center;
 	width: 904px;
