@@ -7333,7 +7333,7 @@
 	<div class="George2"></div>
 	<div class="George1"><p>John Richard Sidoroff<br>b. Apr. 25, 1955</p><div class="moreInfoOne"><a data-bs-toggle="modal" href="#johnRichardSidoroffModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="photoJohnRichardSidoroff.html">Pictures<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
 	<div class="George2"><span class="divorceSign">&#10229;&sol;&nbsp;&sol;&#10230;</span><br>m. May 28, 1979</p></div>
-	<div class="George1"><p>Margo B. Holycross<br>b. 1960</p><div class="moreInfoOne"><a data-bs-toggle="modal" href="#margoBHolycrossModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
+	<div class="George1"><p>Margaret "Margo" Bennett Holycross<br>b. 1960</p><div class="moreInfoOne"><a data-bs-toggle="modal" href="#margoBHolycrossModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
 	<div class="George2"></div>
 	<div class="George1"><p>Dave Atkinson</p></div>
 	<div class="George2"><span class="divorceSign">&#10229;&sol;&nbsp;&sol;&#10230;</span><br>m. Sept. 2, 1979</div>
@@ -7691,9 +7691,18 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	  			</div><!--closes .modal-header-->
 	  			<div class="modal-body">
-					<p>Born April 25, 1955 in New York, New York.</p>
-					<p>Married Margo Holycross on May 28, 1979; they divorced in 1984 in Connecticut.</p>
-	  			</div><!--closes .modal-body-->
+					<button class="tablinkJohnRichardSidoroff tabHeading btn-sm" onclick="openTabJohnRichardSidoroff(event, 'infoJohnRichardSidoroff')">Information</button>
+					<button class="tablinkJohnRichardSidoroff tabHeading btn-sm" onclick="openTabJohnRichardSidoroff(event, 'docsJohnRichardSidoroff')">Documents</button>
+	  				<div id="infoJohnRichardSidoroff" class="tabContentJohnRichardSidoroff">
+	  					<p></p>
+	  					<p>Born April 25, 1955 in New York, New York.</p>
+						<p>Married Margaret "Margo" Bennett Holycross on May 28, 1979 in Bel Air, Maryland; they divorced in 1984 in Connecticut.</p>
+					</div>
+					<div id="docsJohnRichardSidoroff" class="tabContentJohnRichardSidoroff">
+						<p></p>
+						<p><a href="photoDocsJohnRichardSidoroff.html" class="docLink">Certificate of Marriage&nbsp;&#x2197;</a></p>
+					</div>
+	  			</div><!--closes modal-body-->
 			</div><!--closes .modal-content-->
 	  	</div><!--closes .modal-dialog-->
 	</div><!--closes .modal-->
@@ -7702,11 +7711,11 @@
 	  	<div class="modal-dialog modal-Info">
 			<div class="modal-content">
 	  			<div class="modal-header">
-					<h6 class="modal-title" id="margoBHolycrossLabel">Margo B. Holycross</h6>
+					<h6 class="modal-title" id="margoBHolycrossLabel">Margaret "Margo" Bennett Holycross</h6>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	  			</div><!--closes .modal-header-->
 	  			<div class="modal-body">
-					<p>Married John Richard Sidoroff on May 28, 1979; they divorced in 1984 in Connecticut.</p>
+					<p>Married John Richard Sidoroff on May 28, 1979 in Bel Air, Maryland; they divorced in 1984 in Connecticut.</p>
 					<p>Married Todd R. Bonner on May 16, 1987 in Naugatuck, Connecticut.</p>
 	  			</div><!--closes .modal-body-->
 			</div><!--closes .modal-content-->
@@ -7770,7 +7779,7 @@
 						<p>Born January  20, 1961 in New York, New York.</p>
 						<p>Graduated from SUNY Albany in 1983 and the University of Pennsylvania Law School in 1987.</p>
 						<p>Married Sunghee Ko on December 17, 1999 in New York, New York at the Office of the City Clerk.</p>
-						<p>Occupation was lawyer from 1987 to 2014.</p>
+						<p>Occupation was lawyer.</p>
 					</div>
 					<div id="docsGeorgeAlfredGreensladeIII" class="tabContentGeorgeAlfredGreensladeIII">
 						<p></p>
@@ -9127,7 +9136,7 @@
   					</tr>
   					<tr>
    						 <td class="firstColumn">First cousins once removed by marriage:</td>
-   						 <td class="secondColumn">Margo B. Holycross, David Atkinson, Yeldrim "Ty" Baycora and Amy Ilene Schneider</td>
+   						 <td class="secondColumn">Margaret "Margo" Bennett Holycross, David Atkinson, Yeldrim "Ty" Baycora and Amy Ilene Schneider</td>
 						<td class="thirdColumn">Eighth</td>
  					 </tr>
  					 <tr>
@@ -10819,6 +10828,22 @@ function openTabJonathanEdwardGreenslade(evtJonathanEdwardGreenslade, ContentJon
   }
   document.getElementById(ContentJonathanEdwardGreenslade).style.display = "block";
   evtJonathanEdwardGreenslade.currentTarget.classList.add("highlightedTab");
+}
+
+document.getElementsByClassName("tablinkJohnRichardSidoroff")[0].click();
+
+function openTabJohnRichardSidoroff(evtJohnRichardSidoroff, ContentJohnRichardSidoroff) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentJohnRichardSidoroff");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkJohnRichardSidoroff");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentJohnRichardSidoroff).style.display = "block";
+  evtJohnRichardSidoroff.currentTarget.classList.add("highlightedTab");
 }
 
 document.getElementsByClassName("tablinkRichardMichaelSidoroff")[0].click();
