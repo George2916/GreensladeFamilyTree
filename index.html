@@ -6460,11 +6460,11 @@
 	<div class="George2"></div>
 	<div class="George2"></div>
 	<div class="George2"></div>
-	<div class="George1"><p>Yvonne Geraldine De Potter</p></div>
+	<div class="George1"><p>Yvonne Geraldine De Potter<br>b. Nov. 17, 1928<br>d. July 1994</p><div class="moreInfoTwo"><a data-bs-toggle="modal" href="#yvonneDepotterModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
 	<div class="George2"><span class="divorceSign">&#10229;&sol;&nbsp;&sol;&#10230;</span><br>m. Feb. 19, 1948</div>
 	<div class="George1"><p>Denys Henry Bament<br>b. 1928</p><div class="moreInfoOne"><a data-bs-toggle="modal" href="#denysBamentModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
-	<div class="George2"><span class="marriageSign">&#10229;&#10230;</span></div>
-	<div class="George1"><p>Second wife</p></div>
+	<div class="George2"><span class="marriageSign">&#10229;&#10230;</span><br>m. 1975</div>
+	<div class="George1"><p>Marion O. Godding</p></div>
 	<div class="George2"></div>
 	<div class="George2"></div>
 	<div class="George2"></div>
@@ -7199,6 +7199,29 @@
   				</div><!--closes .modal-body-->
 				</div><!--closes .modal-content-->
   		</div><!--closes .modal-dialog-->
+	</div><!--closes .modal-->
+	
+	<div class="modal fade" id="yvonneDepotterModal" tabindex="-1" aria-labelledby="yvonneDepotterLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-Info">
+			<div class="modal-content">
+	  			<div class="modal-header">
+					<h6 class="modal-title" id="yvonneDepotterLabel">Yvonne Geraldine De Potter</h6>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	  			</div><!--closes .modal-header-->
+	  				<div class="modal-body">
+					<button class="tablinkYvonneDepotter tabHeading btn-sm" onclick="openTabYvonneDepotter(event, 'infoYvonneDepotter')">Information</button>
+					<button class="tablinkYvonneDepotter tabHeading btn-sm" onclick="openTabYvonneDepotter(event, 'picturesYvonneDepotter')">Picture</button>
+	  				<div id="infoYvonneDepotter" class="tabContentYvonneDepotter">
+	  					<p></p>
+	  					<p>Buried in Fleetwood Cemetery, Fleetwood, county of Lancashire, England.</p>
+					</div>
+					<div id="picturesYvonneDepotter" class="tabContentYvonneDepotter">
+						<p></p>
+						<p class="zoomB"><img class="img-fluid" src="images/yvonneDepotter.jpg"></p><p>Fleewood Cemetery<br>Fleetwood, county of Lancashire, England<br>Photo copied from findagrave.com.<br><i>Hover over image to see enlarged version.</i></p></p>
+					</div>
+	  			</div><!--closes modal-body-->
+			</div><!--closes .modal-content-->
+	  	</div><!--closes .modal-dialog-->
 	</div><!--closes .modal-->
 	
 </div>
@@ -9810,7 +9833,7 @@
   					</tr>
   					<tr>
    						 <td class="firstColumn">Second cousins twice removed by marriage:</td>
-   						 <td class="secondColumn">Jane Paling, Peter Brien, Basil Swift, Yvonne Geraldine De Potter and the second wife of Denys Henry Bament</td>
+   						 <td class="secondColumn">Jane Paling, Peter Brien, Basil Swift, Yvonne Geraldine De Potter and Marion O. Godding</td>
 						<td class="thirdColumn">Seventh</td>
  					 </tr>
  					 <tr>
@@ -11932,6 +11955,22 @@ function openTabEsmeHeatherSteer(evtEsmeHeatherSteer, ContentEsmeHeatherSteer) {
   }
   document.getElementById(ContentEsmeHeatherSteer).style.display = "block";
   evtEsmeHeatherSteer.currentTarget.classList.add("highlightedTab");
+}
+
+document.getElementsByClassName("tablinkYvonneDepotter")[0].click();
+
+function openTabYvonneDepotter(evtYvonneDepotter, ContentYvonneDepotter) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentYvonneDepotter");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkYvonneDepotter");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentYvonneDepotter).style.display = "block";
+  evtYvonneDepotter.currentTarget.classList.add("highlightedTab");
 }
 
 document.getElementsByClassName("tablinkFranEdgerton")[0].click();
