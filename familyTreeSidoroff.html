@@ -25,9 +25,9 @@
   
   <div>
      <div class="George2"></div>
-     <div class="George1" ><p>Theodore Sidoroff</p></div>
+     <div class="George1" ><p>Theodore Sidoroff</p><div class="moreInfoZero"><a data-bs-toggle="modal" href="#TheodoreSidoroffModal">&nbsp;More info<span class="moreInfoArrow">&nbsp;&#x2197;</span></a></div></div>
 	   <div class="George2"><span class="marriageSign">&#10229;&#10230;</span></div>
-	   <div class="George1"><p>Wife</p></div>
+	   <div class="George1"><p>Elinor ______</p></div>
 	   <div class="George2"></div>
 	   <div class="George2"></div>
   </div>
@@ -114,6 +114,29 @@
 
 <!--modal for More Info-->
 
+<div class="modal fade" id="TheodoreSidoroffModal" tabindex="-1" aria-labelledby="TheodoreSidoroffModal" aria-hidden="true">
+  <div class="modal-dialog modal-Info">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="TheodoreSidoroffModal">Theodore Sidoroff</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><!--closes .modal-header-->
+      <div class="modal-body">
+        	<button class="tablinkTheodoreSidoroff tabHeading btn-sm" onclick="openTabTheodoreSidoroff(event, 'infoTheodoreSidoroff')">Information</button>
+					<button class="tablinkTheodoreSidoroff tabHeading btn-sm" onclick="openTabTheodoreSidoroff(event, 'docsTheodoreSidoroff')">Documents</button>
+      	  <div id="infoTheodoreSidoroff" class="tabContentTheodoreSidoroff">
+      	    <p></p>
+						<p>Born in Russia in approximately 1898.</p>
+				  </div>
+				  <div id="docsTheodoreSidoroff" class="tabContentTheodoreSidoroff">
+				    <p></p>
+				    <p><a href="photoDocsTheodoreSidoroff.html" class="docLink">Extract from 1930 census of Fell Township, Pennsylvania.&nbsp;&#x2197;</a><br>The census indicates that in 1930 the Sidoroff houseold consisted of Theodore (head, age 32), Elinor (wife, age 33), John (son, age 6 months), Anthony Putnick (step son, age 4), Mary Malounas (step daughter, age 9) and Jennie Malounas (step daughter, age 6).</p>
+					</div>
+      </div><!--closes modal-body-->
+    </div><!--closes .modal-content-->
+  </div><!--closes .modal-dialog-->
+</div><!--closes .modal-->
+
 <div class="modal fade" id="JohnTSidoroffModal" tabindex="-1" aria-labelledby="JohnTSidoroffModal" aria-hidden="true">
   <div class="modal-dialog modal-Info">
     <div class="modal-content">
@@ -147,6 +170,23 @@
 </div><!--closes .modal-->
 
 <script>
+
+document.getElementsByClassName("tablinkTheodoreSidoroff")[0].click();
+
+function openTabTheodoreSidoroff(evtTheodoreSidoroff, ContentTheodoreSidoroff) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentTheodoreSidoroff");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkTheodoreSidoroff");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentTheodoreSidoroff).style.display = "block";
+  evtTheodoreSidoroff.currentTarget.classList.add("highlightedTab");
+}
+
 
 document.getElementsByClassName("tablinkJohnTSidoroff")[0].click();
 
