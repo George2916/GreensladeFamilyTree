@@ -277,3 +277,9 @@ function sevenPageUnflip() {
 function goingBack() {
   window.history.back();
 }
+ 
+/* used to close linked page when that page has been opened in a new window */
+ 
+function closeWindow() {
+  window.close();
+}
