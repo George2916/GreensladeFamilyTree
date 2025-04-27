@@ -908,6 +908,17 @@ td {
 	 	transition: transform ease-in-out 0.1s;
 	}
 	
+	.zoomA-1:hover {
+		cursor: grab;
+	  	transform: scale(1.0);
+	  	transform-origin: left top;
+	  	
+	  	width: 600px;
+	  	height: auto;
+	  	/* ease | ease-in | ease-out | linear */
+	 	transition: transform ease-in-out 0.1s;
+	}
+	
 	.zoomB:hover {
 		cursor: grab;
 	  	transform: scale(2.5);
