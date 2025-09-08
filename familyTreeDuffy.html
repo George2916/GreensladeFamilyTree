@@ -546,7 +546,7 @@
 				</div>
 				<div id="docsmollieMcDonagh" class="tabContentmollieMcDonagh">
 				    <p></p>
-				    <p><a href="photoDocsMollieMcDonagh.html" class="docLink">Extract from 1930 census of Manhattan, New York&nbsp;&#x2197;</a></p><p>The census indicates that Mary Kenny, age 35, was the head of a household that included (i) her daughter Margaret, age 5, (ii) her son Terrance, age 2, (iii) her nephew Patrick Torpey, age 24, (iv) her brother-in-law, John Kenny, and (v) a number of lodgers. Among the lodgers were Joseph Duffy, age 21, and Cathleen Duffy, age 20.</p>
+				    <p><a href="photoDocsMollieMcDonagh.html" class="docLink">Extract from 1930 census of Manhattan, New York&nbsp;&#x2197;</a></p><p>The census indicates that Mary Kenny, age 35, was the head of a household that included (i) her daughter Margaret, age 5, (ii) her son Terrance, age 2, (iii) her nephew Patrick Torpey, age 23, (iv) her brother-in-law, John Kenny, and (v) a number of lodgers. Among the lodgers were Joseph Duffy, age 21, and Cathleen Duffy, age 20.</p>
 				    <p><a href="photoDocsMollieMcDonagh.html#MM(2)" class="docLink">Extract from 1940 census of Manhattan, New York&nbsp;&#x2197;</a></p><p>The census indicates that Mollie Kenny, age 44, was the head of a household that included (i) her daughter Margaret, age 13, (ii) her son Terrance, age 11, and (iii) 14 lodgers.</p>
 				    <p><a href="photoDocsMollieMcDonagh.html#MM(3)" class="docLink">Extract from 1950 census of Manhattan, New York&nbsp;&#x2197;</a></p><p>The census indicates that Molly Kenny, having aged only 4 years since the last decennial census, at age 48 was the head of a household that included her daughter Margaret, age 23, and her son Terrance, age 21.</p></p>
 					</div>
@@ -606,6 +606,41 @@
 </div><!--closes .modal-->
 
 <div class="modal fade" id="kathleenDuffyModal" tabindex="-1" aria-labelledby="kathleenDuffyLabel" aria-hidden="true">
+  <div class="modal-dialog modal-Info">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="kathleenDuffyLabel">Kathleen Duffy</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><!--closes .modal-header-->
+      <div class="modal-body">
+        	<button class="tablinkKathleenDuffy tabHeading btn-sm" onclick="openTabKathleenDuffy(event, 'infoKathleenDuffy')">Information</button>
+					<button class="tablinkKathleenDuffy tabHeading btn-sm" onclick="openTabKathleenDuffy(event, 'docsKathleenDuffy')">Documents</button>
+      	<div id="infoKathleenDuffy" class="tabContentKathleenDuffy">
+      	    <p></p>
+      	    <p>Kathleen Duffy was born on September 29, 1909 in Ballaghaderreen, County Roscommon, Ireland.</p>
+            <p>She died on May 25, 1978 in Rockaway Beach, New York.</p>
+            <p>She married James Joseph Coburn. They had two children, Margaret ("Peggy") and James.</p>
+            <p>James Joseph Coburn was born on August 16, 1902 in County Louth, Ireland.</p>
+            <p>James Joseph Coburn died on May 29 1978 in Rockaway Beach, New York.</p>
+				</div>
+				<div id="docsKathleenDuffy" class="tabContentKathleenDuffy">
+				    <p></p>
+				    <p><a href="photoDocsKathleenDuffy.html" class="docLink">Extract from 1950 census of Queens, New York&nbsp;&#x2197;</a></p><p>The census indicates that James Coburn, age 47, was the head of a household that included his wife Kathleen, age 40, his daughter Margaret, age 14, and his son James, age 11.</p>
+					</div>
+      </div><!--closes modal-body-->
+    </div><!--closes .modal-content-->
+  </div><!--closes .modal-dialog-->
+</div><!--closes .modal-->
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="XXXXXXkathleenDuffyModal" tabindex="-1" aria-labelledby="kathleenDuffyLabel" aria-hidden="true">
   <div class="modal-dialog modal-Info">
     <div class="modal-content">
       <div class="modal-header">
@@ -1155,11 +1190,21 @@ function openTabmollieMcDonagh(evtmollieMcDonagh, ContentmollieMcDonagh) {
   evtmollieMcDonagh.currentTarget.classList.add("highlightedTab");
 }
 
+document.getElementsByClassName("tablinkKathleenDuffy")[0].click();
 
-
-
-
-
+function openTabKathleenDuffy(evtKathleenDuffy, ContentKathleenDuffy) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentKathleenDuffy");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkKathleenDuffy");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentKathleenDuffy).style.display = "block";
+  evtKathleenDuffy.currentTarget.classList.add("highlightedTab");
+}
 
 document.getElementsByClassName("tablinkEdward")[0].click();
 
