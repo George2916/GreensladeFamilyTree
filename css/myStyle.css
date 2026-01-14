@@ -716,7 +716,13 @@
 
 .carousel-indicators {filter: invert(100%);}
 
-.carousel-control-prev-icon, .carousel-control-next-icon {filter: invert(100%);}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {filter: invert(100%);} /*background-color:red somehow changes the color of the left and righ arrows to something close to #00FFFF*/
+
+@media only screen and (max-width: 767px) {	
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+		background-color: red;
+}
 
 .carousel .carousel-indicators button {
    	width: 10px;
