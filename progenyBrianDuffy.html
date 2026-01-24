@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/myStyle2.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+<title>Progeny of Brian Duffy and Mary Cullan</title>
+
+    <script src="js/d3.min.v6.7.0.js"></script>
+   
+</head>
+
+<body class="progenyBrianDuffyBody">
+    
+  <div class="container-fluid">
+  
+  <div>
+    <div class="progenyBrianA"></div>
+	  <div class="progenyKevinB">Progeny of Brian Duffy and Mary "Maggie" Cullan</div>
+	  <div class="progenyKevinC" id="progeny"></div>
+  </div>
+  
+  </div><!--closes .container-fluid-->
+   
+    <script>
+        
+    var svg = d3.select("body").append("svg")
+            .attr("width",3200).attr("height",620)
+            .append("g").attr("transform", "translate(50,50)");
+    
+    var data = [{"child":"Brian Duffy m. Mary \"Maggie\" Cullan", "parent": ""},
+    
+                {"child":"Winnifred Duffy m. John McKeon", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
+                {"child":"Johnny McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"William McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Helen McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Sisereen McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Shiela McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                
+                {"child":"Annie Duffy m. John McCormack", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
+                {"child":"John McCormack m. Noreen", "parent": "Annie Duffy m. John McCormack"},
+                {"child":"Martin McCormack", "parent": "Annie Duffy m. John McCormack"},
+                {"child":"Raymond McCormack", "parent": "Annie Duffy m. John McCormack"},
+                
+                {"child":"Molly Duffy", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
+                
+                {"child":"Edward Duffy (d. 1984 in Australia) m. Lea", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
+                
+                {"child":"Second Son", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
+                
+            ];
+        var dataStructure = d3.stratify()
+                    .id(function(d){return d.child;})
+                    .parentId(function(d){return d.parent;})
+                    (data);
+        var treeStructure = d3.tree().size([3200,530]);
+        var information = treeStructure(dataStructure);
+        
+        var circles = svg.append("g").selectAll("circle")
+                    .data(information.descendants());
+        circles.enter().append("circle")
+            .attr("cx", function(d){return d.x;})
+            .attr("cy", function(d){return d.y;})
+            .attr("r",7);
+        
+        var connections = svg.append("g").selectAll("path")
+                    .data(information.links());
+        connections.enter().append("path")
+            .attr("d", function(d){
+                return "M" + d.source.x + "," + d.source.y + " C " + d.source.x + "," + (d.source.y + d.target.y)/2 + " "
+                + d.target.x + "," + (d.source.y + d.target.y)/2 + " "
+                + d.target.x + "," + d.target.y;                
+                
+            });
+            
+        var names = svg.append("g").selectAll("text")
+                    .data(information.descendants());
+        names.enter().append("text")
+                .text(function(d){return d.data.child;})
+                .attr("x", function(d){return d.x+7;})
+                .attr("y", function(d){return d.y+4;})
+    </script>
+    
+</body>
+</html>

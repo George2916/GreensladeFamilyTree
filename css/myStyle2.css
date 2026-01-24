@@ -53,6 +53,26 @@ path {fill: none;
 
 body {font-size: 83%;}
 
+/*CSS FOR PROGENY OF BRIAN DUFFY AND MARY CULLAN*/
+
+.progenyBrianDuffyBody {
+    width: 3000px;
+    
+}
+
+.progenyBrianA {
+	background: #169B62;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 1320px;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
 /*CSS FOR PROGENY OF KATHLEEN DUFFY AND JAMES COBURN*/
 
 .progenyCoburnDiv {

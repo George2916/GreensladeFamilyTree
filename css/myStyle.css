@@ -23,7 +23,7 @@
 .George1 p {text-align: center;}
 
 .George2 {
-	background: white;
+	background: yellow;
 	display: inline-block;
 	font-family: arial, verdana, tahoma;
 	font-size: 11px;
@@ -256,7 +256,7 @@
 	-o-border-radius: 5px 0px 0px 5px;
 	display: inline-block;
 	height: 71px;
-	margin: 25px -185px -25px 850px;
+	margin: 25px -185px -25px 635px;
 	width: 600px;
 	vertical-align: text-bottom;
 }
@@ -807,7 +807,7 @@
 }
 
 
-/*STYLING IN SVG IN GREENSLADE FAMILY TREE*/
+/*STYLING IN SVG IN GREENSLADE AND DUFFY FAMILY TREE*/
 
 #thomasAndElizabethGreenslade::after, #georgeAndRhodaGreenslade::after {
 	content: 'three \00a0\00a0\00a0 children';
@@ -836,7 +836,16 @@
     display: block;
 }
 
-#johnAndJaneGreenslade::after {
+#johnAndBridgitMcDonagh::after {
+	content: 'seven \00a0\00a0\00a0 children';
+    position: relative;
+   	left: 5px;
+   	top: -41px;
+    color: #666;
+    display: block;
+	
+}
+#johnAndJaneGreenslade::after, #michaelAndAnnDuffy::after {
 	content: 'nine \00a0\00a0\00a0 children';
     position: relative;
    	left: 9px;
