@@ -15,49 +15,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     
-<title>Progeny of Una Duffy and Sam Medlicott</title>
+<title>Progeny of Sarah "Sadie" McDonagh and John Cominos</title>
 
     <script src="js/d3.min.v6.7.0.js"></script>
    
 </head>
 
-<body class="progenyMedlicottBody">
+<body class="progenySarahBody">
     
-<div class="container-fluid">
+    <div class="container-fluid">
   
   <div>
-    <div class="progenyMedlicottA"></div>
-	  <div class="progenyMedlicottB" id="progeny">Progeny of Winifred "Una" Duffy and Samuel Thomas Medlicott</div>
-	  <div class="progenyMedlicottC"></div>
+    <div class="progenySarahA"></div>
+	  <div class="progenySarahB" id="progeny">Progeny of Sarah "Sadie" McDonagh and John Cominos</div>
+	  <div class="progenySarahC"></div>
   </div>
   
-</div>
+  </div>
    
     <script>
         
     var svg = d3.select("body").append("svg")
-            .attr("width",2000).attr("height",620)
+            .attr("width",1700).attr("height",620)
             .append("g").attr("transform", "translate(50,50)");
     
-    var data = [{"child":"Winifred \"Una\" Duffy (1912 - 2003) m. Samuel Thomas Medlicott (1909 - 2002)", "parent": ""},
+    var data = [{"child":"Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)", "parent": ""},
     
-                {"child":"John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)", "parent": "Winifred \"Una\" Duffy (1912 - 2003) m. Samuel Thomas Medlicott (1909 - 2002)"},
-                {"child":"Sally Ann Medlicott (b. 1971)", "parent": "John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)"},
-                {"child":"Timothy John Medlicott (b. 1973)", "parent": "John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)"},
-                {"child":"Benjamin  Edward Medlicott (b. 1980)", "parent": "John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)"},
+                {"child":"Jerome (or Gerard) Cominos (b. about 1921) m. ?", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
+                {"child":"Child", "parent": "Jerome (or Gerard) Cominos (b. about 1921) m. ?"},
                 
-                {"child":"Brian Peter Medlcott m. Kathleen Fowles", "parent": "Winifred \"Una\" Duffy (1912 - 2003) m. Samuel Thomas Medlicott (1909 - 2002)"},
-                {"child":"Daniel Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
-                {"child":"Teresa Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
-                {"child":"David Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
-                {"child":"Amy Louise Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
+                {"child":"Alice Cominos (b. about 1923) m. ?", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
+                {"child":"Four children", "parent": "Alice Cominos (b. about 1923) m. ?"},
+    
+                {"child":"Peter Cominos (b. about 1932) m. Alice (Tilly?)", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
+                {"child":"Arlene Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
+                {"child":"Michael Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
+                {"child":"Robert Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
+                {"child":"Timothy Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
+                
+                
                 
             ];
         var dataStructure = d3.stratify()
                     .id(function(d){return d.child;})
                     .parentId(function(d){return d.parent;})
                     (data);
-        var treeStructure = d3.tree().size([2000,550]);
+        var treeStructure = d3.tree().size([1700,550]);
         var information = treeStructure(dataStructure);
         
         var circles = svg.append("g").selectAll("circle")

@@ -36,24 +36,25 @@
     <script>
         
     var svg = d3.select("body").append("svg")
-            .attr("width",3200).attr("height",620)
+            .attr("width",3400).attr("height",620)
             .append("g").attr("transform", "translate(50,50)");
     
     var data = [{"child":"Brian Duffy m. Mary \"Maggie\" Cullan", "parent": ""},
     
                 {"child":"Winnifred Duffy m. John McKeon", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
-                {"child":"Johnny McKeon", "parent": "Winnifred Duffy m. John McKeon"},
-                {"child":"William McKeon", "parent": "Winnifred Duffy m. John McKeon"},
-                {"child":"Helen McKeon", "parent": "Winnifred Duffy m. John McKeon"},
-                {"child":"Sisereen McKeon", "parent": "Winnifred Duffy m. John McKeon"},
-                {"child":"Shiela McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"John McKeon", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"William McKeon m. Patricia ?", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Helen McKeon m. ? Peterson", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Josephine McKeon m. ? O'Driscoll", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Mary McKeon m. ? Walsh", "parent": "Winnifred Duffy m. John McKeon"},
+                {"child":"Shiela McKeon m. Gene Kelly (not the dancer)", "parent": "Winnifred Duffy m. John McKeon"},
                 
                 {"child":"Annie Duffy m. John McCormack", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
-                {"child":"John McCormack m. Noreen", "parent": "Annie Duffy m. John McCormack"},
+                {"child":"John McCormack m. Noreen ?", "parent": "Annie Duffy m. John McCormack"},
                 {"child":"Martin McCormack", "parent": "Annie Duffy m. John McCormack"},
                 {"child":"Raymond McCormack", "parent": "Annie Duffy m. John McCormack"},
                 
-                {"child":"Molly Duffy", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
+                {"child":"Molly (or Mary) Duffy", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
                 
                 {"child":"Edward Duffy (d. 1984 in Australia) m. Lea", "parent": "Brian Duffy m. Mary \"Maggie\" Cullan"},
                 
@@ -64,7 +65,7 @@
                     .id(function(d){return d.child;})
                     .parentId(function(d){return d.parent;})
                     (data);
-        var treeStructure = d3.tree().size([3200,530]);
+        var treeStructure = d3.tree().size([3500,530]);
         var information = treeStructure(dataStructure);
         
         var circles = svg.append("g").selectAll("circle")

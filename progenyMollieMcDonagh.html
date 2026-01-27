@@ -15,49 +15,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     
-<title>Progeny of Una Duffy and Sam Medlicott</title>
+<title>Progeny of Mary "Molly" McDonagh and Terence Kenny</title>
 
     <script src="js/d3.min.v6.7.0.js"></script>
    
 </head>
 
-<body class="progenyMedlicottBody">
+<body class="progenySarahBody">
     
-<div class="container-fluid">
+    <div class="container-fluid">
   
   <div>
-    <div class="progenyMedlicottA"></div>
-	  <div class="progenyMedlicottB" id="progeny">Progeny of Winifred "Una" Duffy and Samuel Thomas Medlicott</div>
-	  <div class="progenyMedlicottC"></div>
+    <div class="progenyMaryA"></div>
+	  <div class="progenySarahB" id="progeny">Progeny of Mary "Mollie" McDonagh and Terence Kenny</div>
+	  <div class="progenySarahC"></div>
   </div>
   
-</div>
+  </div>
    
     <script>
         
     var svg = d3.select("body").append("svg")
-            .attr("width",2000).attr("height",620)
+            .attr("width",1700).attr("height",620)
             .append("g").attr("transform", "translate(50,50)");
     
-    var data = [{"child":"Winifred \"Una\" Duffy (1912 - 2003) m. Samuel Thomas Medlicott (1909 - 2002)", "parent": ""},
+    var data = [{"child":"Mary \"Mollie\" McDonagh (b. about 1895) m. Terence Kenny (d. before 1930)", "parent": ""},
     
-                {"child":"John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)", "parent": "Winifred \"Una\" Duffy (1912 - 2003) m. Samuel Thomas Medlicott (1909 - 2002)"},
-                {"child":"Sally Ann Medlicott (b. 1971)", "parent": "John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)"},
-                {"child":"Timothy John Medlicott (b. 1973)", "parent": "John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)"},
-                {"child":"Benjamin  Edward Medlicott (b. 1980)", "parent": "John Anthony Medlicott (1943 - 2020) m. Susan Kathleen Croxall (b. 1943)"},
+                {"child":"Margaret Kenny (b. about 1927)", "parent": "Mary \"Mollie\" McDonagh (b. about 1895) m. Terence Kenny (d. before 1930)"},
+    
+                {"child":"Terence Kenny (b. about 1929) m. Aileen?", "parent": "Mary \"Mollie\" McDonagh (b. about 1895) m. Terence Kenny (d. before 1930)"},
                 
-                {"child":"Brian Peter Medlcott m. Kathleen Fowles", "parent": "Winifred \"Una\" Duffy (1912 - 2003) m. Samuel Thomas Medlicott (1909 - 2002)"},
-                {"child":"Daniel Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
-                {"child":"Teresa Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
-                {"child":"David Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
-                {"child":"Amy Louise Medlicott", "parent": "Brian Peter Medlcott m. Kathleen Fowles"},
+                {"child":"Bonnie Kenny m. Patrick Hammond", "parent": "Terence Kenny (b. about 1929) m. Aileen?"},
+                {"child":"Meagan Hammond (b. 1987)", "parent": "Bonnie Kenny m. Patrick Hammond"},
+                {"child":"Michael Hammond (b. 1989)", "parent": "Bonnie Kenny m. Patrick Hammond"},
                 
-            ];
+                {"child":"Christopher", "parent": "Terence Kenny (b. about 1929) m. Aileen?"},
+               
+                ];
+            
         var dataStructure = d3.stratify()
                     .id(function(d){return d.child;})
                     .parentId(function(d){return d.parent;})
                     (data);
-        var treeStructure = d3.tree().size([2000,550]);
+        var treeStructure = d3.tree().size([1700,550]);
         var information = treeStructure(dataStructure);
         
         var circles = svg.append("g").selectAll("circle")
