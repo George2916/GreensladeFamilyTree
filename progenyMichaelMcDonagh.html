@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     
-<title>Progeny of Michael "Mick" McDonagh and Mary Mary Ann Coleman</title>
+<title>Progeny of Michael "Mick" McDonagh and Mary Ann Coleman</title>
 
     <script src="js/d3.min.v6.7.0.js"></script>
    
@@ -39,18 +39,18 @@
             .attr("width",3400).attr("height",620)
             .append("g").attr("transform", "translate(50,50)");
     
-    var data = [{"child":"Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman", "parent": ""},
+    var data = [{"child":"Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman", "parent": ""},
     
-                {"child":"Jack McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman"},
+                {"child":"Jack McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman"},
                 
-                {"child":"Malachy McDonagh ", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman"},
+                {"child":"Malachy McDonagh ", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman"},
                 // note space after McDonagh to distinguish from other Malachy below
                 
-                {"child":"Moya McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman"},
+                {"child":"Moya McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman"},
                 
-                {"child":"Thomas McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman"},
+                {"child":"Thomas McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman"},
     
-                {"child":"Michael McDonagh m. Madilyn Murphy", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman"},
+                {"child":"Michael McDonagh m. Madilyn Murphy", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman"},
                 {"child":"Michael McDonagh m. Susan ?", "parent": "Michael McDonagh m. Madilyn Murphy"},
                 {"child":"Jamie McDonagh", "parent": "Michael McDonagh m. Susan ?"},
                 {"child":"Christopher McDonagh", "parent": "Michael McDonagh m. Susan ?"},
@@ -72,10 +72,9 @@
                 
                 {"child":"Bridget McDonagh", "parent": "Michael McDonagh m. Madilyn Murphy"},
                 
-                
-                
-                {"child":"Patrick McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Mary Ann Coleman"},
+                {"child":"Patrick McDonagh", "parent": "Michael \"Mick\" McDonagh (1876 - 1970) m. Mary Ann Coleman"},
             ];
+            
         var dataStructure = d3.stratify()
                     .id(function(d){return d.child;})
                     .parentId(function(d){return d.parent;})

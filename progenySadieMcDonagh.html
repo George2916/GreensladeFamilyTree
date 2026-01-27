@@ -41,21 +41,19 @@
     
     var data = [{"child":"Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)", "parent": ""},
     
-                {"child":"Jerome (or Gerard) Cominos (b. about 1921) m. ?", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
-                {"child":"Child", "parent": "Jerome (or Gerard) Cominos (b. about 1921) m. ?"},
+                {"child":"Jerome (or Gerard) Cominos (b. about 1921)", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
+                {"child":"Child", "parent": "Jerome (or Gerard) Cominos (b. about 1921)"},
                 
-                {"child":"Alice Cominos (b. about 1923) m. ?", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
-                {"child":"Four children", "parent": "Alice Cominos (b. about 1923) m. ?"},
+                {"child":"Alice Cominos (b. about 1923)", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
+                {"child":"Four children", "parent": "Alice Cominos (b. about 1923)"},
     
                 {"child":"Peter Cominos (b. about 1932) m. Alice (Tilly?)", "parent": "Sarah \"Sadie\" McDonagh (b. about 1900) m. John Cominos (b. about 1899)"},
                 {"child":"Arlene Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
                 {"child":"Michael Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
                 {"child":"Robert Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
                 {"child":"Timothy Cominos", "parent": "Peter Cominos (b. about 1932) m. Alice (Tilly?)"},
-                
-                
-                
             ];
+            
         var dataStructure = d3.stratify()
                     .id(function(d){return d.child;})
                     .parentId(function(d){return d.parent;})
