@@ -355,7 +355,7 @@ body {font-size: 83%;}
 	vertical-align: text-bottom;
 }
 
-/*CSS FOR PROGENY OF SARAH "SADIE" McDONAGH AND JOHN COMINOS*/
+/*CSS FOR PROGENY OF SARAH "SADIE" McDONAGH/JOHN COMINOS AND MARY "MOLLIE" McDONAGH AND TERENCE KENNY*/
 
 .progenySarahBody {
     display: inline-block;
@@ -372,6 +372,19 @@ body {font-size: 83%;}
 	display: inline-block;
 	height: 50px;
 	margin: 5px -3px 5px 130px;
+	width: 400px;
+	vertical-align: text-bottom;
+}
+
+.progenyMaryA {
+	background:  #B31942;
+	border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-o-border-radius: 5px 0px 0px 5px;
+	display: inline-block;
+	height: 50px;
+	margin: 5px -3px 5px 140px;
 	width: 400px;
 	vertical-align: text-bottom;
 }
