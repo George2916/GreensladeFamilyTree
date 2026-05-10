@@ -369,7 +369,7 @@
 						But thy eternal summer shall not fade,<br>
 						Nor lose possession of that fair thou ow’st;<br>
 						Nor shall death brag thou wander’st in his shade,<br>
-						When in eternal lines to time thou grow’st:<br>
+						When with eternal views through time thou grow’st:<br>
 						<span class="indentShakespeare1">So long as men can breathe or eyes can see,</span><br>
 						<span class="indentShakespeare1">So long lives this website, and this website</span><br>
 						<span class="indentShakespeare2">gives life to thee.</span><br><br>
@@ -8096,7 +8096,39 @@
 	  	</div><!--closes .modal-dialog-->
 	</div><!--closes .modal-->
 	
+	
 	<div class="modal fade" id="christianOSueroModal" tabindex="-1" aria-labelledby="christianOSueroLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-Info">
+			<div class="modal-content">
+	  			<div class="modal-header">
+					<h6 class="modal-title" id="christianOSueroLabel">Christian O. Suero</h6>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	  			</div><!--closes .modal-header-->
+	  				<div class="modal-body">
+					<button class="tablinkChristianOSuero tabHeading btn-sm" onclick="openTabChristianOSuero(event, 'infoChristianOSuero')">Information</button>
+					<button class="tablinkChristianOSuero tabHeading btn-sm" onclick="openTabChristianOSuero(event, 'hearsayChristianOSuero')">Hearsay</button>
+	  				<div id="infoChristianOSuero" class="tabContentChristianOSuero">
+	  					<p></p>
+	  					<p>Married Denise Perez on February 18, 1986; they divorced on November 6, 2000.</p>
+					</div>
+					<div id="hearsayChristianOSuero" class="tabContentChristianOSuero">
+						<p></p>
+						<p>His godfather is actor Tony Curtis (n&#233; Bernard Schwartz). He did not attend the christening.</p></P>
+					</div>
+	  			</div><!--closes modal-body-->
+			</div><!--closes .modal-content-->
+	  	</div><!--closes .modal-dialog-->
+	</div><!--closes .modal-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="modal fade" id="christianOSueroModal2" tabindex="-1" aria-labelledby="christianOSueroLabel" aria-hidden="true">
 	  	<div class="modal-dialog modal-Info">
 			<div class="modal-content">
 	  			<div class="modal-header">
@@ -12118,6 +12150,22 @@ function openTabRitaBurnett(evtRitaBurnett, ContentRitaBurnett) {
   }
   document.getElementById(ContentRitaBurnett).style.display = "block";
   evtRitaBurnett.currentTarget.classList.add("highlightedTab");
+}
+
+document.getElementsByClassName("tablinkChristianOSuero")[0].click();
+
+function openTabChristianOSuero(evtChristianOSuero, ContentChristianOSuero) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentChristianOSuero");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkChristianOSuero");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentChristianOSuero).style.display = "block";
+  evtChristianOSuero.currentTarget.classList.add("highlightedTab");
 }
 
 document.getElementsByClassName("tablinkJosephEugeneWalsh")[0].click();
